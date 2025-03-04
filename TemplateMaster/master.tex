@@ -1,0 +1,75 @@
+% filepath: /Users/rodrigo/dev/uc3m/template_abnt.tex
+\documentclass[a4paper,12pt]{article}
+\usepackage[brazil]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{indentfirst}
+\usepackage{cite}
+\usepackage{hyperref}
+\usepackage{geometry}
+\geometry{left=3cm,right=2cm,top=3cm,bottom=2cm}
+
+% Configurações de parágrafo
+\setlength{\parindent}{1.25cm}
+\setlength{\parskip}{0.2cm}
+
+% Configurações de seção
+\usepackage{titlesec}
+\titleformat{\section}{\normalfont\bfseries\uppercase}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\bfseries}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}{\normalfont\bfseries}{\thesubsubsection}{1em}{}
+
+% Capa
+\title{Título do Trabalho}
+\author{Nome do Autor}
+\date{Data}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{empty} % Remove numeração da capa
+
+\newpage
+\begin{center}
+    \textbf{Resumo}
+\end{center}
+\noindent O resumo deve conter entre 150 e 500 palavras, apresentando de forma concisa os objetivos, metodologia, resultados e conclusões do trabalho.
+
+\begin{center}
+    \textbf{Palavras-chave}: palavra1, palavra2, palavra3.
+\end{center}
+
+\newpage
+
+\tableofcontents
+
+\newpage
+
+\section{Introdução}
+A introdução deve apresentar o tema do trabalho, os objetivos e a justificativa.
+
+\section{Revisão da Literatura}
+A revisão da literatura deve apresentar os principais trabalhos já realizados sobre o tema.
+
+\section{Metodologia}
+Descreva a metodologia utilizada para a realização do trabalho.
+
+\section{Resultados}
+Apresente os resultados obtidos com a pesquisa.
+
+\section{Discussão}
+Discuta os resultados obtidos, comparando-os com a literatura existente.
+
+\section{Conclusão}
+Apresente as conclusões do trabalho, destacando as contribuições e sugestões para trabalhos futuros.
+
+\newpage
+
+\begin{thebibliography}{99}
+\bibitem{exemplo1} SOBRENOME, Nome. \textit{Título do Livro}. Edição. Local: Editora, Ano.
+\bibitem{exemplo2} SOBRENOME, Nome. Título do artigo. \textit{Nome da Revista}, Local, v. volume, n. número, p. página inicial-final, mês ano.
+\end{thebibliography}
+
+\end{document}

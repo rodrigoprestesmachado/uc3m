@@ -1,54 +1,29 @@
-// For format details, see https://aka.ms/devcontainer.json. For config options, see the
-// README at: https://github.com/devcontainers/templates/tree/main/src/ubuntu
 {
-	"name": "Research container",
-	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/devcontainers/base:jammy",
-	"features": {
-		"ghcr.io/devcontainers/features/python:1": {},
-		"ghcr.io/prulloac/devcontainer-features/latex:1": {}
-	},
-
-	// Features to add to the dev container. More info: https://containers.dev/features.
-	// "features": {},
-
-	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// "forwardPorts": [],
-
-	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "sh ./postCreate.sh",
-
-	// Configure tool-specific properties.
-	// Configure tool-specific properties.
-	"customizations": {
-		"vscode": {
-			"extensions": [
-				"Equinusocio.vsc-material-theme-icons",
-				"ybaumes.highlight-trailing-white-spaces",
-				"eamodio.gitlens",
-				"GitHub.copilot",
-                "GitHub.copilot-chat",
-				"GitHub.vscode-github-actions",
-				"GitHub.vscode-pull-request-github",
-				"streetsidesoftware.code-spell-checker-portuguese-brazilian",
-				"ms-toolsai.jupyter",
-				"James-Yu.latex-workshop",
-				"mechatroner.rainbow-csv"
-			],
-			"settings": {
-				"workbench.colorTheme": "Default Light Modern",
-				"workbench.iconTheme": "eq-material-theme-icons-light",
-				"editor.rulers": [80,120],
-				"workbench.colorCustomizations": {
-					"editorRuler.foreground": "#e9ecf3"
-				},
-				"cSpell.enabled": true,
-				"cSpell.language": "en, pt_BR, pt"
-			}
-		}
-	}
-
-
-	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
-	// "remoteUser": "root"
+  "name": "LaTeX Codespace",
+  "image": "ghcr.io/xu-cheng/texlive-full:latest",
+  "features": {},
+  "postCreateCommand": "apt-get update && apt-get install -y latexmk",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "James-Yu.latex-workshop",
+        "eamodio.gitlens",
+        "GitHub.copilot",
+        "GitHub.copilot-chat",
+        "GitHub.vscode-github-actions",
+        "GitHub.vscode-pull-request-github",
+        "streetsidesoftware.code-spell-checker-portuguese-brazilian"
+      ],
+      "settings": {
+        "workbench.colorTheme": "Default Light Modern",
+        "workbench.iconTheme": "eq-material-theme-icons-light",
+        "editor.rulers": [80, 120],
+        "workbench.colorCustomizations": {
+          "editorRuler.foreground": "#F3F7FF"
+        },
+        "cSpell.enabled": true,
+        "cSpell.language": "pt_BR, en, pt"
+      }
+    }
+  }
 }
