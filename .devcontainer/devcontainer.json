@@ -2,11 +2,12 @@
   "name": "LaTeX Codespace",
   "image": "ghcr.io/xu-cheng/texlive-full:latest",
   "features": {},
-  "postCreateCommand": "apt-get update && apt-get install -y latexmk",
   "customizations": {
     "vscode": {
       "extensions": [
         "James-Yu.latex-workshop",
+        "ms-python.python",
+        "ms-toolsai.jupyter",
         "eamodio.gitlens",
         "GitHub.copilot",
         "GitHub.copilot-chat",
