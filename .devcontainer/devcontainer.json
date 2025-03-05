@@ -1,7 +1,10 @@
 {
   "name": "LaTeX Codespace",
   "image": "ghcr.io/xu-cheng/texlive-full:latest",
-  "features": {},
+  "features": {
+    "ghcr.io/rocker-org/devcontainer-features/apt-packages:1": {}
+  },
+  "postCreateCommand": "apk add --no-cache gcc python3-dev musl-dev linux-headers && pip install --upgrade pip && pip install psutil ipykernel pandas matplotlib",
   "customizations": {
     "vscode": {
       "extensions": [
