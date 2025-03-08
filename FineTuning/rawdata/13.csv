@@ -1,0 +1,194 @@
+Id;Role;Message;Datetime;Classification;Topic;Change
+sqzdRuqNHXHJIWH;User;que funcion hace el metodo stack push y stack pop;16:31:43 - 25/06/2024;Conceptual Questions;Data Structures;No
+sqzdRuqNHXHJIWH;semantic_search;"# Departamento de Ingeniería Telemática  ## Pilas y colas  ### Programación de sistemas  **MATERIALES BASADOS EN EL TRABAJO DE DIVERSOS AUTORES:**   Carlos Alario Hoyos, Jesús Arias Fisteus, Carlos Delgado Kloos, Mª Carmen Fernández Panadero, Julio Villena Román  ### Contenidos  - Pilas (stacks) - Colas (queues) - Colas dobles (deques – double-ended queues)  #### Estructura de datos lineal  - Inserción y extracción por un único extremo   - LIFO (Last-In-First-Out)  #### Pilas  - Insertar por un extremo: `push(x)` - Extraer por el mismo extremo: `pop()`  #### Interfaz para pilas  ```java 
+public interface Stack<E> {     
+    boolean isEmpty();     
+    int size();     
+    E top();     
+    void push(E info);     
+    E pop(); 
+}  
+
+Interfaz para pilas (con excepciones) 
+public interface Stack<E> {     
+    boolean isEmpty();     
+    int size();     
+    E top() throws EmptyStackException;     
+    void push(E info) throws StackOverflowException;     
+    E pop() throws EmptyStackException; 
+}  
+
+Interfaz para pilas (sin genéricos) 
+public interface Stack {     
+    boolean isEmpty();     
+    int size();     
+    Object top();     
+    void push(Object info);     
+    Object pop(); 
+}  
+
+Una interfaz dos implementaciones  Implementación basada en arrays: ArrayStack Implementación basada en listas enlazadas: LinkedStack  ArrayStack  Pila vacía Pila con 1 elemento Pila con 4 elementos Extremo de inserción y extracción  Ejercicio 1 Crea la clase ArrayStack<E>, la cual implementa Stack<E>, y tiene tres atributos: el entero capacity, el array genérico data, y el entero top con valor inicial -1. Crea el constructor de la clase, el cual recibe un único parámetro que inicializa el atributo capacity, y crea un array de datos con esa capacidad.```markdown Departamento de Ingeniería Telemática Pilas y colas Programación de sistemas MATERIALES BASADOS EN EL TRABAJO DE DIVERSOS AUTORES:Carlos Alario Hoyos, Jesús Arias Fisteus, Carlos Delgado Kloos, Mª Carmen Fernández Panadero, Julio Villena Román  Pilas (stacks) Colas (queues) Colas dobles (deques – double-ended queues)  Contenidos Estructura de datos lineal  Inserción y extracción por un único extremo LIFO (Last-In-First-Out)  Pilas  Insertar por un extremo: push(x) Extraer por el mismo extremo: pop()  Interfaz para pilas 
+public interface Stack<E> {     
+    boolean isEmpty();     
+    int size();     
+    E top();     
+    void push(E info);     
+    E pop(); 
+}  
+
+Interfaz para pilas (con excepciones) 
+public interface Stack<E> {     
+    boolean isEmpty();     
+    int size();     
+    E top() throws EmptyStackException;     
+    void push(E info) throws StackOverflowException;     
+    E pop() throws EmptyStackException; 
+}  
+
+Interfaz para pilas (sin genéricos) 
+public interface Stack {     
+    boolean isEmpty();     
+    int size();     
+    Object top();     
+    void push(Object info);     
+    Object pop(); 
+}  
+
+Una interfaz dos implementaciones  Implementación basada en arrays: ArrayStack Implementación basada en listas enlazadas: LinkedStack  ArrayStack  Pila vacía Pila con 1 elemento Pila con 4 elementos Extremo de inserción y extracción  Ejercicio 1 Crea la clase ArrayStack<E>, la cual implementa Stack<E>, y tiene tres atributos: el entero capacity, el array genérico data, y el entero top con valor inicial -1. Crea el constructor de la clase, el cual recibe un único parámetro que inicializa el atributo capacity, y crea un array de datos con esa capacidad. IMPORTANTE: No puede crearse un array de genéricos, así que tendrá que crearse un array de Object y hacer un casting.";16:31:43 - 25/06/2024;;;
+sqzdRuqNHXHJIWH;CharlieBOT;El método push de la interfaz Stack se utiliza para insertar un elemento en la pila. Por otro lado, el método pop se utiliza para extraer y devolver el elemento en la cima de la pila. Ambos métodos son fundamentales para manipular una pila en el contexto de la programación de sistemas.;16:31:44 - 25/06/2024;;;
+sqzdRuqNHXHJIWH;User;como saber la altura de un arbol dado;16:32:53 - 25/06/2024;Conceptual Questions;Data Structures;No
+sqzdRuqNHXHJIWH;semantic_search;Crespo García, Carlos Delgado Kloos, Mª Carmen Fernández Panadero, Julio Villena Román Contenidos  Concepto de árbol Terminología Implementación Casos especiales Árboles binarios de búsqueda Montículos (heaps)    Concepto de árbol Un árbol es una estructura de datos no lineal que almacena los elementos jerárquicamente (generalización de las listas). Ejemplos  Clasificación de la información en una enciclopedia Sistema de ficheros Estructura organizativa de una empresa Estructura de rangos del ejército 5.```markdown  Departamento de Ingeniería Telemática Árboles Programación de sistemas MATERIALES BASADOS EN EL TRABAJO DE DIVERSOS AUTORES:Carlos Alario Hoyos, Raquel M.Árboles (n-arios, binarios, binarios de búsqueda) ACTIVIDADES FORMATIVAS, METODOLOGÍA A UTILIZAR Y RÉGIMEN DE TUTORÍAS La metodología docente de esta asignatura está basada en la integración activa del estudiante en la actividad docente y en la aplicación de los principios de la evaluación continua. La asignatura está dividida en unidades, y cada unidad consiste en sesiones magistrales en aula grande y sesiones de prácticas en grupo pequeño.;16:32:53 - 25/06/2024;;;
+sqzdRuqNHXHJIWH;CharlieBOT;"Para calcular la altura de un árbol, puedes utilizar un algoritmo de recorrido en profundidad (DFS) para recorrer el árbol y calcular la altura. Aquí tienes un ejemplo de cómo hacerlo en Java: 
+class Node {     
+    int data;     
+    Node left, right;      
+    public Node(int item) {         
+        data = item;         
+        left = right = null;     
+    } 
+}  
+
+class BinaryTree {     
+    Node root;      
+    int height(Node node) {         
+        if (node == null) {             
+            return 0;         
+        } else {             
+            int leftHeight = height(node.left);             
+            int rightHeight = height(node.right);              
+            if (leftHeight > rightHeight) {                 
+                return (leftHeight + 1);             
+            } else {                 
+                return (rightHeight + 1);             
+            }         
+        }     
+    }      
+    public static void main(String[] args) {         
+        BinaryTree tree = new BinaryTree();          
+        tree.root = new Node(1);         
+        tree.root.left = new Node(2);         
+        tree.root.right = new Node(3);         
+        tree.root.left.left = new Node(4);         
+        tree.root.left.right = new Node(5);          
+        System.out.println(""La altura del árbol es: "" + tree.height(tree.root));     
+    } 
+}  
+
+Este código define un árbol binario y calcula su altura utilizando un enfoque de recorrido en profundidad. Puedes adaptar este código para tu árbol específico.";16:32:57 - 25/06/2024;;;
+sqzdRuqNHXHJIWH;User;como saber la altura de un arbol dado unos valores;16:33:51 - 25/06/2024;Conceptual Questions;Data Structures;No
+sqzdRuqNHXHJIWH;semantic_search;;16:33:51 - 25/06/2024;;;
+sqzdRuqNHXHJIWH;CharlieBOT;"Para calcular la altura de un árbol dado unos valores, puedes construir el árbol a partir de los valores y luego calcular su altura. Aquí tienes un ejemplo de cómo hacerlo en Java: Primero, necesitarás definir una clase para el nodo del árbol: 
+class Node {     
+    int data;     
+    Node left, right;      
+    public Node(int item) {         
+        data = item;         
+        left = right = null;     
+    } 
+}  
+
+Luego, puedes definir una clase para el árbol y un método para calcular la altura: 
+class BinaryTree {     
+    Node root;      
+    int height(Node node) {         
+        if (node == null) {             
+            return 0;         
+        } else {             
+            int leftHeight = height(node.left);             
+            int rightHeight = height(node.right);              
+            if (leftHeight > rightHeight) {                 
+                return (leftHeight + 1);             
+            } else {                 
+                return (rightHeight + 1);             
+            }         
+        }     
+    }      
+    public static void main(String[] args) {         
+        BinaryTree tree = new BinaryTree();          
+        // Aquí debes construir el árbol a partir de los valores dados         
+        // Por ejemplo:         
+        // tree.root = new Node(1);         
+        // tree.root.left = new Node(2);         
+        // tree.root.right = new Node(3);         
+        // tree.root.left.left = new Node(4);         
+        // tree.root.left.right = new Node(5);          
+        // Luego, puedes calcular la altura del árbol         
+        System.out.println(""La altura del árbol es: "" + tree.height(tree.root));     
+    } 
+}  
+
+En el método main, debes construir el árbol a partir de los valores dados y luego calcular su altura utilizando el método height. Este es un enfoque general que puedes adaptar a tus valores específicos para calcular la altura del árbol.";16:33:56 - 25/06/2024;;;
+sqzdRuqNHXHJIWH;User;que es una deque;16:39:08 - 25/06/2024;Conceptual Questions;Data Structures;No
+sqzdRuqNHXHJIWH;semantic_search;;16:39:08 - 25/06/2024;;;
+sqzdRuqNHXHJIWH;CharlieBOT;"Un Deque (Double Ended Queue) es una estructura de datos que combina las características de una pila (stack) y una cola (queue). Esto significa que puedes agregar y eliminar elementos tanto al principio como al final de la cola. En Java, la interfaz Deque está disponible en la biblioteca estándar y se puede implementar utilizando clases como ArrayDeque o LinkedList. La interfaz Deque proporciona métodos para realizar operaciones como inserción, eliminación, inspección y recorrido de elementos en ambas direcciones. Aquí tienes un ejemplo de cómo crear y utilizar un Deque en Java: 
+import java.util.Deque; 
+import java.util.ArrayDeque;  
+
+public class DequeExample {     
+    public static void main(String[] args) {         
+        Deque<String> deque = new ArrayDeque<>();          
+        // Agregar elementos al principio y al final         
+        deque.addFirst(""First"");         
+        deque.addLast(""Last"");          
+        // Acceder y eliminar elementos         
+        System.out.println(deque.getFirst()); // Imprime ""First""         
+        System.out.println(deque.getLast()); // Imprime ""Last""         
+        deque.removeFirst();         
+        deque.removeLast();          
+        // Recorrer los elementos         
+        for (String element : deque) {             
+            System.out.println(element);         
+        }     
+    } 
+}  
+
+En este ejemplo, se crea un Deque utilizando la implementación ArrayDeque, se agregan elementos al principio y al final, se acceden y eliminan elementos, y se recorren los elementos en el Deque.";16:39:12 - 25/06/2024;;;
+sqzdRuqNHXHJIWH;User;que es un NullPointerException;16:39:54 - 25/06/2024;Debugging Help;Java;Yes
+sqzdRuqNHXHJIWH;semantic_search;;16:39:54 - 25/06/2024;;;
+sqzdRuqNHXHJIWH;CharlieBOT;"Un NullPointerException es una excepción que ocurre en tiempo de ejecución en Java cuando intentas acceder a un objeto que es null. En otras palabras, estás tratando de llamar a un método o acceder a un campo de un objeto que no ha sido inicializado, lo que provoca esta excepción. Por ejemplo, si intentas llamar un método o acceder a un campo de un objeto que es null, como en el siguiente código: 
+String text = null; 
+int length = text.length(); // Esto provocará un NullPointerException  
+
+En este caso, la variable text es null, por lo que al intentar llamar al método length() sobre ella, se producirá un NullPointerException. Es importante tener en cuenta la posibilidad de null al trabajar con referencias a objetos en Java y tomar las precauciones necesarias para evitar NullPointerExceptions, como verificar si un objeto es null antes de intentar acceder a sus métodos o campos.";16:39:57 - 25/06/2024;;;
+sqzdRuqNHXHJIWH;User;la palabra this a que ser refiere;16:40:59 - 25/06/2024;Conceptual Questions;Java;No
+sqzdRuqNHXHJIWH;semantic_search;;16:40:59 - 25/06/2024;;;
+sqzdRuqNHXHJIWH;CharlieBOT;"La palabra clave this en Java se refiere a la instancia actual de la clase en la que se está utilizando. Se utiliza para hacer referencia a los campos, métodos y constructores de la clase actual. Algunos usos comunes de this incluyen:  Acceder a los campos de la clase actual cuando tienen el mismo nombre que los parámetros de un método o constructor:  
+public class MyClass {     
+    private int value;      
+    public MyClass(int value) {         
+        this.value = value; // Utilizando ""this"" para distinguir el campo de la clase del parámetro     
+    } 
+}   
+
+Llamar a otro constructor de la misma clase desde un constructor:  
+public class MyClass {     
+    private int value;      
+    public MyClass() {         
+        this(0); // Llamando al constructor con un parámetro desde otro constructor de la misma clase     
+    }      
+    public MyClass(int value) {         
+        this.value = value;     
+    } 
+}  
+
+En resumen, this se refiere a la instancia actual de la clase y se utiliza para evitar ambigüedades entre los campos y parámetros de la clase, así como para llamar a otros constructores de la misma clase.";16:41:02 - 25/06/2024;;;

@@ -1,0 +1,51 @@
+Id;Role;Message;Datetime;Classification;Topic;Change
+txF9sX6lMLyRldJ;User;Cuál es la complejidad del quicksort;08:05:27 - 13/06/2024;Conceptual Questions;Sorting;No
+txF9sX6lMLyRldJ;semantic_search;"#### Quick Sort - Elige un dato, el pivote, de la lista. - Reordena la lista de forma que:   - Todos los datos menores que el pivote estén a la izquierda del pivote.   - Y los datos mayores a su derecha. - Ordena recursivamente:   - La sublista de los datos menores y   - La sublista de los datos mayores.  ""public static void quickSort (int[] a) {
+    qSort(a, 0, a.length-1);
+}
+public static void qSort (int[] a, int l, int r) {
+    if (l>=r){
+        return;
+    }
+    int m = partition(a, l, r);
+    qSort(a,l,m-1);
+    qSort(a,m+1,r);
+}
+public static int partition (int[] a, int l, int r) {
+    int i=l+1; // left
+    int j=r; // right
+    int p=a[l]; // pivot
+    while (i<=j) {
+        if (a[i]<=p){
+            i++;
+        } else if (a[j]>p){
+            j--;
+        } else{
+            swap(a,i,j);
+        }
+    }
+    swap(a,l,j);
+    return j;
+}
+public static void swap (int[] a, int i, int j) {
+    int aux=a[i];
+    a[i]=a[j];
+    a[j]=aux;
+}""  Quick Sort.Conclusiones  Ventajas: Muy eficiente para arrays con muchos elementos. O(n log n) ¡Pero caso peor con O(n^2)! No requiere apenas memoria adicional. Algoritmo paralelizable.   Desventajas: Código más complejo.    Ejercicio 9  Utilizando el algoritmo de ordenación Quick Sort, ¿cuántos intercambios se producen para ordenar de menor a mayor (orden ascendente) el siguiente array? {7,3,13,1,11,5}  Resumen  Algoritmos básicos (Bubble, Insertion, Selection) Complejidad media O(n^2) Poco eficientes con muchos elementos Código simple Poco uso de memoria   Algoritmos avanzados (Heap, Merge, Quick) Complejidad media O(n log n) Eficientes con muchos elementos Código complejo Poco uso de memoria (excepto Merge Sort)    Visualización de Algoritmos de Ordenación";08:05:27 - 13/06/2024;;;
+txF9sX6lMLyRldJ;CharlieBOT;La complejidad del algoritmo Quick Sort es de O(n log n) en el caso promedio. Sin embargo, en el peor de los casos, la complejidad puede llegar a ser de O(n^2). Este algoritmo es muy eficiente para arrays con muchos elementos y es paralelizable, pero su código es más complejo en comparación con otros algoritmos de ordenación.;08:05:28 - 13/06/2024;;;
+txF9sX6lMLyRldJ;User;Puedes darme un ejemplo de código con una estructura de control condicional;08:06:06 - 13/06/2024;Code Snippet;Java;Yes
+txF9sX6lMLyRldJ;semantic_search;;08:06:06 - 13/06/2024;;;
+txF9sX6lMLyRldJ;CharlieBOT;"Claro, aquí tienes un ejemplo de código en Java que utiliza una estructura de control condicional (if-else) para determinar si un número es par o impar: ""public class ParImpar {
+    public static void main(String[] args) {
+        int numero = 7;
+        
+        if (numero % 2 == 0) {
+            System.out.println(numero + "" es un número par"");
+        } else {
+            System.out.println(numero + "" es un número impar"");
+        }
+    }
+}""  En este ejemplo, el programa verifica si el número es divisible entre 2 utilizando el operador de módulo (%). Si el residuo es 0, entonces el número es par; de lo contrario, es impar.";08:06:08 - 13/06/2024;;;
+txF9sX6lMLyRldJ;User;que es una public class?;08:06:51 - 13/06/2024;Conceptual Questions;Java;No
+txF9sX6lMLyRldJ;semantic_search;;08:06:51 - 13/06/2024;;;
+txF9sX6lMLyRldJ;CharlieBOT;Una public class en Java es la forma en que se define una clase que puede ser accesible desde cualquier otra clase. La palabra clave public indica que la clase es accesible desde cualquier otra clase en el mismo paquete o en otros paquetes.  En Java, cada archivo fuente puede contener solo una clase pública y el nombre del archivo debe coincidir con el nombre de la clase pública. La clase pública es la que contiene el método main que se utiliza como punto de entrada para la ejecución del programa. Es importante recordar que solo puede haber una clase pública por archivo fuente y su nombre debe coincidir con el nombre del archivo.;08:06:53 - 13/06/2024;;;

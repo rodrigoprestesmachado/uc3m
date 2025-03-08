@@ -1,0 +1,63 @@
+Id;Role;Message;Datetime;Classification;Topic;Change
+2RmRcpyXZCqN2Aw;User;"Recapitulación (1) Dado el siguiente código, selecciona la respuesta correcta:     
+    public class Recap1 { 
+        public static void m(int[] array) { 
+            for(int i = 0;i<array.length;i++) { 
+                array[i] = array[i]/2; 
+            } 
+        } 
+        public static void main(String[] args) { 
+            int[] myArray = {1,2,3,4}; 
+            m(myArray); 
+            System.out.println(""The value is: ""+myArray[2]); 
+        } 
+    }  
+    a) Imprime: ""The value is: 1""􏰀 
+    b) Imprime: ""The value is: 3"" 
+    c) Imprime: ""The value is: 2.5"" 
+    d) Imprime: ""The value is: 2"" 
+Orientación a Objetos (7) La definición de dos o más métodos con el mismo nombre, pero diferente signatura o firma se llama: 
+    a) Sobrecarga/Overloading del método. 􏰀 
+    b) Overflowing del método. 
+    c) Redefinición/Overwritting del método. 
+    d) Recasting del método. 
+[...conteúdo adicional omitido para brevidade...]";17:20:01 - 23/06/2024;Multiple Question Exercise;Object Orientation;No
+2RmRcpyXZCqN2Aw;semantic_search;;17:20:01 - 23/06/2024;;;
+2RmRcpyXZCqN2Aw;CharlieBOT;"Recapitulación  
+Respuesta: a) Imprime: ""The value is: 2"" 
+Respuesta: a) Sobrecarga/Overloading del método. 
+Respuesta: a) Un método static es un método de clase, es decir, se puede invocar sin necesidad de crear instancias de la clase a la que pertenece. 
+Respuesta: a) public abstract class ClassC implements Inter1, Inter2. 
+Respuesta: a) Modificar el valor de un atributo privado. 
+Respuesta: a) Es aquella que no permite crear objetos o instancias. 
+Respuesta: a) Imprime: Animal is making a sound; Dog is barking;Cat is purring; 
+Respuesta: a) Person p1= new Student(); Es válido y se conoce como upcasting. 
+Respuesta: b) 0,1y2 
+Respuesta: a) El método representa una recursión en cascada. 
+Respuesta: a) El mensaje ""recursive case"" se imprimirá cuatro veces y el mensaje ""base case"" 1. 
+Respuesta: a) Concatenación y partición listas con coste independiente del tamaño de las listas. 
+Respuesta: a) second.setNext(second.getNext().getNext()) 
+Respuesta: a) 2 
+Respuesta: a) FIFO (First-In-First-Out) 
+Respuesta: a) No es un montículo máximo, porque hay nodos para los que su clave es menor que la de su hijo. 
+Respuesta: a) In-order 
+Respuesta: a) Un árbol es una estructura de datos no lineal que almacena elementos jerárquicamente. 
+Respuesta: a) Un insertion sort. 
+Respuesta: c) 5";17:20:06 - 23/06/2024;;;
+2RmRcpyXZCqN2Aw;User;Explícame el 1;17:48:28 - 23/06/2024;Conceptual Questions;Object Orientation;No
+2RmRcpyXZCqN2Aw;semantic_search;;17:48:28 - 23/06/2024;;;
+2RmRcpyXZCqN2Aw;CharlieBOT;"Claro, con gusto te explico la respuesta al primer ejercicio. En el código dado, se define un array de enteros myArray con los valores {1, 2, 3, 4}. Luego se llama al método m pasando myArray como argumento. Dentro del método m, se recorre el array dividiendo cada elemento por 2. Después, se imprime el valor de myArray[2]. Dado que el array se pasa por referencia, al modificar myArray dentro del método m, se modifican los valores del array original. Por lo tanto, al imprimir myArray[2] después de llamar al método m, el valor será el resultado de dividir 3 (el valor original en myArray[2]) entre 2, que es 1.5. Sin embargo, al tratarse de un array de enteros, el resultado se trunca a 1. Por lo tanto, la respuesta correcta es: a) Imprime: ""The value is: 2"" Espero que esta explicación te haya sido útil. Si tienes alguna otra pregunta, no dudes en preguntar.";17:48:31 - 23/06/2024;;;
+2RmRcpyXZCqN2Aw;User;seria 1 entonces;17:49:06 - 23/06/2024;Student Correction;Object Orientation;No
+2RmRcpyXZCqN2Aw;semantic_search;;17:49:06 - 23/06/2024;;;
+2RmRcpyXZCqN2Aw;CharlieBOT;"Mis disculpas, cometí un error en mi explicación. Tienes razón, el valor que se imprime es 1, ya que al dividir 3 entre 2, el resultado es 1.5, pero al tratarse de un array de enteros, el resultado se trunca a 1. Por lo tanto, la respuesta correcta es: a) Imprime: ""The value is: 1"" Gracias por señalar el error, y lamento la confusión. Si tienes alguna otra pregunta o duda, estaré encantado de ayudarte.";17:49:08 - 23/06/2024;;;
+2RmRcpyXZCqN2Aw;User;Explícame cuando se trata de un in order post y pre;17:50:07 - 23/06/2024;Conceptual Questions;Data Structures;Yes
+2RmRcpyXZCqN2Aw;semantic_search;;17:50:07 - 23/06/2024;;;
+2RmRcpyXZCqN2Aw;CharlieBOT;"Cuando hablamos de ""in-order"", ""pre-order"" y ""post-order"", estamos haciendo referencia a los distintos tipos de recorridos en un árbol binario.  
+
+In-order: En este tipo de recorrido, primero se visita el subárbol izquierdo, luego el nodo raíz y finalmente el subárbol derecho. Este tipo de recorrido se utiliza para imprimir los nodos de un árbol en orden ascendente, en el caso de un árbol de búsqueda binaria.  
+
+Pre-order: En este tipo de recorrido, primero se visita el nodo raíz, luego el subárbol izquierdo y finalmente el subárbol derecho. Este tipo de recorrido se utiliza para crear una copia del árbol.  
+
+Post-order: En este tipo de recorrido, primero se visita el subárbol izquierdo, luego el subárbol derecho y finalmente el nodo raíz. Este tipo de recorrido se utiliza para liberar la memoria ocupada por el árbol.   
+
+Estos tipos de recorridos son útiles en la manipulación y procesamiento de árboles binarios, y cada uno tiene sus propias aplicaciones específicas. Espero que esta explicación te haya sido útil. Si tienes más preguntas sobre este tema o cualquier otro, no dudes en preguntar.";17:50:10 - 23/06/2024;;;

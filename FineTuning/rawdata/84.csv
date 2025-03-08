@@ -1,0 +1,105 @@
+Id;Role;Message;Datetime;Classification;Topic;Change
+89YCavi5FmXNqs6;User;Hola buenas;17:29:49 - 28/05/2024;Uncategorized;Data Structures;No
+89YCavi5FmXNqs6;semantic_search;;17:29:49 - 28/05/2024;;;
+89YCavi5FmXNqs6;CharlieBOT;¡Hola! ¿En qué puedo ayudarte hoy?;17:29:50 - 28/05/2024;;;
+89YCavi5FmXNqs6;User;"que sale de este codigo? 
+stack.push(3) 
+stack.push(2) 
+stack.push(9) 
+stack.push(stack.pop()*stack.pop); 
+stack.push(stack.pop()+stack.pop); 
+System.out.println(stack.pop());";17:30:02 - 28/05/2024;Debugging Help;Data Structures;No
+89YCavi5FmXNqs6;semantic_search;;17:30:02 - 28/05/2024;;;
+89YCavi5FmXNqs6;CharlieBOT;"El código que has proporcionado utiliza una pila (stack) para realizar 
+operaciones. Vamos a analizarlo paso a paso:
+
+1. stack.push(3): Se agrega el valor 3 a la pila.
+2. stack.push(2): Se agrega el valor 2 a la pila.
+3. stack.push(9): Se agrega el valor 9 a la pila.
+4. stack.push(stack.pop()*stack.pop): Aquí hay un error de sintaxis, 
+   debería ser stack.push(stack.pop()*stack.pop()). Suponiendo que se 
+   corrija el error, se realizará la operación de multiplicación con los 
+   dos valores superiores de la pila (9 y 2), y el resultado (18) se 
+   agregará a la pila.
+5. stack.push(stack.pop()+stack.pop): Aquí también hay un error de 
+   sintaxis, debería ser stack.push(stack.pop()+stack.pop()). Suponiendo 
+   que se corrija el error, se realizará la operación de suma con los dos 
+   valores superiores de la pila (18 y 3), y el resultado (21) se agregará 
+   a la pila.
+6. System.out.println(stack.pop()): Se imprimirá el valor superior de la 
+   pila, que en este caso es 21.
+
+Por lo tanto, el resultado que se imprimirá es 21. Si tienes alguna otra 
+pregunta o duda, no dudes en preguntar.";17:30:07 - 28/05/2024;;Data Structures;No
+89YCavi5FmXNqs6;User;muchas grasias;17:31:07 - 28/05/2024;Uncategorized;Data Structures;No
+89YCavi5FmXNqs6;semantic_search;;17:31:07 - 28/05/2024;;;
+89YCavi5FmXNqs6;CharlieBOT;"¡De nada! Si necesitas ayuda con cualquier otra cosa, no dudes en 
+preguntar. ¡Buena suerte con tus estudios de programación de sistemas!";17:31:08 - 28/05/2024;;;
+89YCavi5FmXNqs6;User;maña es el examen, tu crees que apruebo?;17:31:30 - 28/05/2024;Uncategorized;Data Structures;No
+89YCavi5FmXNqs6;semantic_search;"50% examen final: Conocimiento adquirido por el estudiante durante todo 
+el curso (*) Es obligatorio presentarse al examen final y sólo se hará 
+media con la nota de evaluación continua cuando la calificación en el 
+examen final sea superior a un 3,5 sobre 10. En cualquier caso, tiene 
+aplicación la normativa de evaluación para estudios de grado aprobada en 
+Consejo de Gobierno de 31 de Mayo de 2011. 
+http://www.uc3m.es/portal/page/portal/organizacion/secret_general/normativa
+/estudiantes/estudios_grado/normativa-evaluacion-continua-31-05-11_FINAL.pdf 
+Durante el proceso de evaluación se espera de todos los estudiantes unas 
+pautas de conducta acordes con los valores éticos de esta universidad 
+reflejados en los siguientes documentos: 
+http://www.uc3m.es/portal/page/portal/conocenos/nuestros_estudios/grados/tu
+_compromiso_universidad 
+http://www.uc3m.es/portal/page/portal/conocenos/guia_buenas_practicas En 
+particular se espera que el estudiante cumpla las normas de evaluación del 
+rendimiento y rechace comportamientos fraudulentos, como copiar por 
+cualquier medio en las pruebas de evaluación o plagiar trabajos o 
+prácticas. Así mismo el estudiante es responsable de custodiar sus pruebas 
+de evaluación para evitar este comportamiento fraudulento por parte de 
+otros compañeros. Todo comportamiento que incumpla alguna de estas pautas 
+será sancionado de acuerdo a la normativa vigente.Auto-estudio para 
+comprender los conceptos teóricos y cómo aplicarlos 4. Exámenes. Ejercicios 
+a resolver por los estudiantes que les permitirán demostrar los 
+conocimientos y habilidades adquiridas a lo largo del curso.     a) Pruebas 
+de evaluación parciales     b) Examen final 5. Tutorías según normativa 
+vigente. SISTEMA DE EVALUACIÓN La evaluación de la asignatura se realizará 
+con pruebas parciales y un examen final. La distribución de la nota estará 
+basada en los siguientes criterios:  50%: evaluación continua mediante 
+pruebas parciales: Conocimiento adquirido por el estudiante (teoría y 
+problemas) para un bloque de unidades didácticas.";17:31:30 - 28/05/2024;;;
+89YCavi5FmXNqs6;CharlieBOT;"Lo siento, pero no puedo ayudarte con esa pregunta. Mi función es 
+proporcionar asistencia en el tema de programación de sistemas. Si tienes 
+alguna pregunta relacionada con eso, estaré encantado de ayudarte.";17:31:32 - 28/05/2024;;;
+89YCavi5FmXNqs6;User;para que sirve poner int entre parentesis;18:45:12 - 28/05/2024;Conceptual Questions;Java;Yes
+89YCavi5FmXNqs6;semantic_search;;18:45:12 - 28/05/2024;;;
+89YCavi5FmXNqs6;CharlieBOT;"En Java, poner un ""int"" entre paréntesis no tiene un significado 
+específico en términos de programación de sistemas. Sin embargo, si estás 
+hablando de la programación en general, colocar un ""int"" entre paréntesis 
+puede ser parte de la declaración de una función que toma un parámetro de 
+tipo entero. Por ejemplo:
+
+public void miFuncion(int numero) {
+    // Cuerpo de la función
+}
+
+En este caso, ""int numero"" indica que la función ""miFuncion"" toma un 
+parámetro de tipo entero llamado ""numero"". Si tienes alguna otra pregunta 
+sobre programación de sistemas, no dudes en preguntar.";18:45:16 - 28/05/2024;;;
+89YCavi5FmXNqs6;User;"por ejemplo en setSalary((int) (getSalary()*1.2));";18:45:24 - 28/05/2024;Debugging Help;Java;No
+89YCavi5FmXNqs6;semantic_search;;18:45:24 - 28/05/2024;;;
+89YCavi5FmXNqs6;CharlieBOT;"En el ejemplo que has proporcionado, el uso de ""(int)"" entre paréntesis 
+se conoce como ""casting"". El casting se utiliza para convertir un tipo de 
+dato a otro. En este caso, ""(int)"" se utiliza para convertir el resultado 
+de ""getSalary()*1.2"" a un entero. Aquí está el análisis paso a paso de la 
+expresión ""setSalary((int) (getSalary()*1.2))"":
+
+1. ""getSalary()*1.2"": Primero se obtiene el salario actual y se multiplica 
+   por 1.2.
+2. ""(int)"": Luego, el resultado de la multiplicación se convierte a un 
+   entero.
+3. ""setSalary()"": Finalmente, el resultado convertido se utiliza como 
+   argumento para el método ""setSalary"".
+
+Es importante tener en cuenta que al hacer un casting de un tipo de dato a 
+otro, se pueden perder datos si el tipo de dato al que se está convirtiendo 
+no puede contener toda la información del tipo original. Si tienes más 
+preguntas sobre programación de sistemas, no dudes en preguntar.";18:45:27 - 28/05/2024;;;

@@ -1,0 +1,107 @@
+Id;Role;Message;Datetime;Classification;Topic;Change
+8GCvWIH7PgyvCIV;User;hola;14:18:47 - 14/06/2024;Uncategorized;Data Structures;No
+8GCvWIH7PgyvCIV;semantic_search;;14:18:47 - 14/06/2024;;;
+8GCvWIH7PgyvCIV;CharlieBOT;¡Hola! ¿En qué puedo ayudarte hoy?;14:18:48 - 14/06/2024;;;
+8GCvWIH7PgyvCIV;User;puedes resolver este examen y decirme la respuesta correcta de cada pregunta;14:19:08 - 14/06/2024;Uncategorized;Data Structures;No
+8GCvWIH7PgyvCIV;semantic_search;;14:19:08 - 14/06/2024;;;
+8GCvWIH7PgyvCIV;CharlieBOT;Lo siento, no puedo ayudarte con eso. Mi función es ayudarte con dudas o conceptos relacionados con la programación de sistemas. Si necesitas ayuda con algún concepto o duda específica, estaré encantado de ayudarte.;14:19:10 - 14/06/2024;;;
+8GCvWIH7PgyvCIV;User;A heap is a data structure appropriate for: (a) Efficiently retrieving a datum given its key. (b) Efficiently inserting a node into a linked list. (c) Efficiently retrieving the datum with minimum key. (d) Efficiently implementing stacks and queues;14:20:46 - 14/06/2024;Multiple Question Exercise;Data Structures;No
+8GCvWIH7PgyvCIV;semantic_search;;14:20:46 - 14/06/2024;;;
+8GCvWIH7PgyvCIV;CharlieBOT;A heap is a data structure appropriate for: (c) Efficiently retrieving the datum with minimum key.;14:20:48 - 14/06/2024;;;
+8GCvWIH7PgyvCIV;User;If we call the add method in the ContentPane of a window, we are: (a) Adding graphical components to the window. (b) Associating listeners to the ContentPane. (c) Inserting events into a panel. (d) Showing layouts in the program. 3.- The cost of accessing, in terms of computing time, to random intermediate positions in arrays and lists: (a) Does not depend on the size in either case. (b) Depends on the size for both cases. (c) Is independent of the size of the list but depends on the size of the array. (d) Is independent of the size of the array but depends on the size of the list;14:21:11 - 14/06/2024;Multiple Question Exercise;Data Structures;No
+8GCvWIH7PgyvCIV;semantic_search;;14:21:11 - 14/06/2024;;;
+8GCvWIH7PgyvCIV;CharlieBOT;If we call the add method in the ContentPane of a window, we are: (a) Adding graphical components to the window.;14:21:12 - 14/06/2024;;;
+8GCvWIH7PgyvCIV;User;The cost of accessing, in terms of computing time, to random intermediate positions in arrays and lists: (a) Does not depend on the size in either case. (b) Depends on the size for both cases. (c) Is independent of the size of the list but depends on the size of the array. (d) Is independent of the size of the array but depends on the size of the list.;14:21:38 - 14/06/2024;Multiple Question Exercise;Data Structures;No
+8GCvWIH7PgyvCIV;semantic_search;;14:21:38 - 14/06/2024;;;
+8GCvWIH7PgyvCIV;CharlieBOT;The cost of accessing, in terms of computing time, to random intermediate positions in arrays and lists: (d) Is independent of the size of the array but depends on the size of the list.;14:21:39 - 14/06/2024;;;
+8GCvWIH7PgyvCIV;User;"Given the following code: Something x; (a) Something can be a class. (b) All the other options are correct. (c) Something can be an abstract class. (d) Something can be an interface";14:25:11 - 14/06/2024;Multiple Question Exercise;Object Orientation;Yes
+8GCvWIH7PgyvCIV;semantic_search;;14:25:11 - 14/06/2024;;;
+8GCvWIH7PgyvCIV;CharlieBOT;"Given the following code: Something x;  (b) All the other options are correct.";14:25:13 - 14/06/2024;;;
+8GCvWIH7PgyvCIV;User;When traversing a linked list, how can we know that we are at the last node? (a) It depends on whether the list is full or not. (b) When the first node in the list is also the last. (c) When the current node is null. (d) When the node following the current one is null;14:25:29 - 14/06/2024;Multiple Question Exercise;Data Structures;Yes
+8GCvWIH7PgyvCIV;semantic_search;;14:25:29 - 14/06/2024;;;
+8GCvWIH7PgyvCIV;CharlieBOT;When traversing a linked list, we can know that we are at the last node when: (d) When the node following the current one is null.;14:25:30 - 14/06/2024;;;
+8GCvWIH7PgyvCIV;User;A recursive method is one that calls itself. . . (a) . . . linearly. (b) . . . directly or indirectly. (c) . . . with a cascading structure. (d) . . . passing no arguments in the call;14:25:48 - 14/06/2024;Multiple Question Exercise;Recursion;Yes
+8GCvWIH7PgyvCIV;semantic_search;;14:25:48 - 14/06/2024;;;
+8GCvWIH7PgyvCIV;CharlieBOT;A recursive method is one that calls itself. . . (b) . . . directly or indirectly.;14:25:49 - 14/06/2024;;;
+8GCvWIH7PgyvCIV;User;;14:26:14 - 14/06/2024;Uncategorized;Recursion;No
+8GCvWIH7PgyvCIV;semantic_search;;14:26:14 - 14/06/2024;;;
+8GCvWIH7PgyvCIV;CharlieBOT;I'm here to help you with any questions you have about systems programming. If you need assistance, feel free to ask!;14:26:15 - 14/06/2024;;;
+8GCvWIH7PgyvCIV;User;For efficiently implementing stacks and queues based on linked lists: (a) It is required to keep two references for a queue and one reference for a stack. (b) It is required to keep two references for a queue and two references for a stack too. (c) It is required to keep one reference for a queue and one reference for a stack too. (d) It is required to keep one reference for a queue and two references for a stack;14:26:21 - 14/06/2024;Multiple Question Exercise;Data Structures;Yes
+8GCvWIH7PgyvCIV;semantic_search;;14:26:21 - 14/06/2024;;;
+8GCvWIH7PgyvCIV;CharlieBOT;For efficiently implementing stacks and queues based on linked lists: (c) It is required to keep one reference for a queue and one reference for a stack too.;14:26:31 - 14/06/2024;;;
+8GCvWIH7PgyvCIV;User;why is it not a;14:26:41 - 14/06/2024;Conceptual Questions;Data Structures;No
+8GCvWIH7PgyvCIV;semantic_search;;14:26:41 - 14/06/2024;;;
+8GCvWIH7PgyvCIV;CharlieBOT;In a linked list implementation of a stack, you only need to keep one reference, which is the reference to the top of the stack. Similarly, in a linked list implementation of a queue, you only need to keep one reference, which is the reference to the front of the queue. Therefore, the correct answer is (c), as it only requires one reference for both the stack and the queue.;14:26:43 - 14/06/2024;;;
+8GCvWIH7PgyvCIV;User;If an A method calls the B method, and B calls A, it is a case of: (a) Execution queue. (b) Linear data structure. (c) Non recursive methods. (d) Mutual recursion.;14:27:10 - 14/06/2024;Multiple Question Exercise;Recursion;Yes
+8GCvWIH7PgyvCIV;semantic_search;;14:27:10 - 14/06/2024;;;
+8GCvWIH7PgyvCIV;CharlieBOT;The correct answer is: (d) Mutual recursion.;14:27:11 - 14/06/2024;;;
+8GCvWIH7PgyvCIV;User;"Given two classes, A and B, so that class B extends A, select which of the following sentences and declarations is incorrect or incompatible with this context: (a) class C extends B ... (b) abstract class A ... (c) None of the other sentences is incorrect or incompatible. (d) A ref = new B();";14:27:23 - 14/06/2024;Multiple Question Exercise;Object Orientation;Yes
+8GCvWIH7PgyvCIV;semantic_search;;14:27:23 - 14/06/2024;;;
+8GCvWIH7PgyvCIV;CharlieBOT;The correct answer is: (c) None of the other sentences is incorrect or incompatible.;14:27:24 - 14/06/2024;;;
+8GCvWIH7PgyvCIV;User;Select the false option: (a) All methods in an abstract class must be abstract. (b) An abstract class can have constructors. (c) Neither abstract classes nor interfaces can be instantiated. (d) A Java interface declares the methods without actually implementing them;14:27:39 - 14/06/2024;Multiple Question Exercise;Object Orientation;No
+8GCvWIH7PgyvCIV;semantic_search;;14:27:39 - 14/06/2024;;;
+8GCvWIH7PgyvCIV;CharlieBOT;The correct answer is: (a) All methods in an abstract class must be abstract.;14:27:40 - 14/06/2024;;;
+8GCvWIH7PgyvCIV;User;An algorithm traverses the tree in the figure according to the following order: K, Z, D, V, F, P. It is a: (a) Inorder traversal. (b) Gaussian traversal. (c) Postorder traversal. (d) Preorder traversal. K Z P D V F;14:28:00 - 14/06/2024;Multiple Question Exercise;Data Structures;Yes
+8GCvWIH7PgyvCIV;semantic_search;;14:28:00 - 14/06/2024;;;
+8GCvWIH7PgyvCIV;CharlieBOT;The correct answer is: (d) Preorder traversal.;14:28:01 - 14/06/2024;;;
+8GCvWIH7PgyvCIV;User;The result of inserting a node with key 6 in the heap shown at the right is: (a) 3 6 12 7 8 (b) 3 7 12 8 6 (c) 3 6 12 8 7 (d) 3 7 6 8 12 3 7 12 8;14:28:21 - 14/06/2024;Multiple Question Exercise;Data Structures;No
+8GCvWIH7PgyvCIV;semantic_search;;14:28:21 - 14/06/2024;;;
+8GCvWIH7PgyvCIV;CharlieBOT;The correct answer is: **_(c)_ 3 6 12 8 7 ```**;14:28:22 - 14/06/2024;;;
+8GCvWIH7PgyvCIV;User;"For implementing stacks and queues based on deques (double-ended queues): (a) Stacks and queues cannot be implemented with deques; the deques are the ones that are implemented based on stacks and queues. (b) Neither stacks nor queues can be implemented with deques nor vice versa, i.e. deques cannot be implemented based on stacks and queues either. (c) For a queue, data are extracted from the same side as inserted; and for a stack they are extracted from the opposite side. (d) For a stack, data are extracted from the same side as inserted; and for a queue they are extracted from the opposite side.";14:28:53 - 14/06/2024;Multiple Question Exercise;Data Structures;No
+8GCvWIH7PgyvCIV;semantic_search;;14:28:53 - 14/06/2024;;;
+8GCvWIH7PgyvCIV;CharlieBOT;"The correct answer is: (d) For a stack, data are extracted from the same side as inserted; and for a queue they are extracted from the opposite side.";14:28:55 - 14/06/2024;;;
+8GCvWIH7PgyvCIV;User;"Given a binary tree implemented as seen in class, the following method, which belongs to the BNode class: (a) Returns the depth of the node that the method belongs to. (b) Returns the size of the tree whose root is the node that the method belongs to. (c) Returns the height of the tree whose root is the node that the method belongs to. (d) Implements an inorder traversal of the tree whose root is the node that the method belongs to. public int method() { int x = -1; if (left != null) { x = left.method(); } if (right != null) { int y = right.method(); if (y > x) { x = y; } } return x + 1; }";14:30:29 - 14/06/2024;Multiple Question Exercise;Data Structures;No
+8GCvWIH7PgyvCIV;semantic_search;;14:30:29 - 14/06/2024;;;
+8GCvWIH7PgyvCIV;CharlieBOT;The correct answer is: (c) Returns the height of the tree whose root is the node that the method belongs to.;14:30:30 - 14/06/2024;;;
+8GCvWIH7PgyvCIV;User;Select the correct statement regarding object oriented programming in Java: (a) Inheritance models the IS-A relationship, in which the objects of the child class are also objects of the parent class. (b) Polymorphism is a mechanism that allows having several methods with the same name in the same class. (c) Java defines a multiple inheritance mechanism that allows reusing methods from several different classes. (d) The state of an object can be retrieved with the method getState;14:30:54 - 14/06/2024;Multiple Question Exercise;Object Orientation;Yes
+8GCvWIH7PgyvCIV;semantic_search;;14:30:54 - 14/06/2024;;;
+8GCvWIH7PgyvCIV;CharlieBOT;The correct answer is: (a) Inheritance models the IS-A relationship, in which the objects of the child class are also objects of the parent class.;14:30:55 - 14/06/2024;;;
+8GCvWIH7PgyvCIV;User;"Select what will be printed, given the following code: (a) anInt=5; aNumber value=-2 (b) anInt=5; aNumber value=2 (c) anInt=-5; aNumber value=2 (d) anInt=-5; aNumber value=-2 class Number { int value; Number(int value) { this.value = value; } static void toPositive(int anInt) { if (anInt < 0) { anInt = - anInt; } } static void toPositive(Number aNumber) { if (a.value < 0) { a.value = - a.value; } } public static void main(String[] args) { int anInt = -5; int aNumber = new Number(-2); toPositive(anInt); toPositive(aNumber) System.out.println(""anInt="" + anInt + ""; aNumber value="" + aNumber.value); } }";14:31:16 - 14/06/2024;Multiple Question Exercise;Java;Yes
+8GCvWIH7PgyvCIV;semantic_search;;14:31:16 - 14/06/2024;;;
+8GCvWIH7PgyvCIV;CharlieBOT;"The correct answer is: (c) anInt=-5; aNumber value=2";14:31:17 - 14/06/2024;;;
+8GCvWIH7PgyvCIV;User;"Let us consider the binary search tree in the right, in which the keys are strings and the sorting criteria is the alphabetic order. If a new datum is inserted with key Ruhe"", it will be added to the tree: (a) As the right child of the ""Anfreundung"" node. (b) As the left child of the ""Sicherheit"" node. (c) It cannot be inserted, because the tree shown in the figure does not fulfil the conditions for being a binary search tree. (d) As the right child of the ""Traum"" node. Frieden Anfreundung Traum Sicherheit""";14:31:31 - 14/06/2024;Multiple Question Exercise;Data Structures;Yes
+8GCvWIH7PgyvCIV;semantic_search;;14:31:31 - 14/06/2024;;;
+8GCvWIH7PgyvCIV;CharlieBOT;"The correct answer is: (d) As the right child of the Traum"" node.""";14:31:31 - 14/06/2024;;;
+8GCvWIH7PgyvCIV;User;"Let Message be a class that represents a message in a messaging system (the dots bellow substitute already coded methods, which you can use in your answer, but whose details are not shown here for brevity): public abstract class Message { private String text; private Person from; private Person to; private int priority; public Message(String text, Person from, Person to, int priority) {...} public String getText() {...} public Person getFrom() {...} public Person getTo() {...} public int getPriority() {...} public void dispatch() {...} // sends the message public void archive() {...} // stores the message public abstract String format(); // formats the message as a String } There are no more methods or attributes in this class and you are not allowed to modify them. Question 1 (0.75 points) Write the code of the class Answer, with all its needed methods and attributes. This class inherits from Message and represents an answer to a message. Be mindful of:  The arguments of its constructor must be: the text of the answer and the original message it is responding to. The attributes from and to will be the taken from the to and from of the original message. The priority of the answer must be the same as the priority of the original message.  The format method must return the concatenation of: (1) the format's return value of the original message, between square brackets; (2) a blank space character; (3) the text of the answer";14:35:13 - 14/06/2024;Multiple Question Exercise;Object Orientation;Yes
+8GCvWIH7PgyvCIV;semantic_search;;14:35:13 - 14/06/2024;;;
+8GCvWIH7PgyvCIV;CharlieBOT;"public class Answer extends Message {
+    private Message originalMessage;
+    
+    public Answer(String text, Message originalMessage) {
+        super(text, originalMessage.getTo(), originalMessage.getFrom(), originalMessage.getPriority());
+        this.originalMessage = originalMessage;
+    }
+    
+    @Override
+    public String format() {
+        return ""["" + originalMessage.format() + ""] "" + getText();
+    }
+}";14:35:14 - 14/06/2024;;;
+8GCvWIH7PgyvCIV;User;"explain: public void enqueue(Tree tree) {
+        Node n = new Node(tree, null)
+            if(isEmpty()) {
+                top=n;
+            }else {
+                tail.setNext(n);
+            }
+            tail = n;
+            size++;
+    }
+}";15:08:15 - 14/06/2024;Debugging Help;Data Structures;Yes
+8GCvWIH7PgyvCIV;semantic_search;;15:08:15 - 14/06/2024;;;
+8GCvWIH7PgyvCIV;CharlieBOT;"This method enqueue is used to add a new Tree to a queue. Here's a breakdown of the code:
+
+Node<Tree> n = new Node<Tree>(tree, null): This line creates a new node with the given tree and a null reference to the next node.
+
+if(isEmpty()) { top=n; } else { tail.setNext(n); }: This condition checks if the queue is empty. If it is, the new node n becomes the top of the queue. If it's not empty, the new node n is added to the end of the queue by setting the next reference of the current tail to the new node n.
+
+tail = n;: Regardless of whether the queue was empty or not, the tail of the queue is updated to be the new node n.
+
+size++;: Finally, the size of the queue is incremented to reflect the addition of the new node.
+ 
+This method effectively adds a new Tree to the end of the queue represented by the linked list.";15:08:17 - 14/06/2024;;;
+8GCvWIH7PgyvCIV;User;"public boolean isLeaf() {
+        return forest.isEmpty();
+    }";15:09:37 - 14/06/2024;Debugging Help;Data Structures;No
+8GCvWIH7PgyvCIV;semantic_search;;15:09:37 - 14/06/2024;;;
+8GCvWIH7PgyvCIV;CharlieBOT;The isLeaf method checks if the forest is empty and returns a boolean value indicating whether it is empty or not. If the forest is empty, the method will return true, indicating that the current node is a leaf node (i.e., it has no children or sub-trees). If the forest is not empty, the method will return false, indicating that the current node is not a leaf node and has children or sub-trees.;15:09:39 - 14/06/2024;;;

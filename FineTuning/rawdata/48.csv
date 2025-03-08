@@ -1,0 +1,84 @@
+Id;Role;Message;Datetime;Classification;Topic;Change
+17S1zEOZLF0natn;User;pop y push que hacen;13:43:38 - 29/05/2024;Conceptual Questions;Data Structures;No
+17S1zEOZLF0natn;semantic_search;;13:43:38 - 29/05/2024;;;
+17S1zEOZLF0natn;CharlieBOT;"pop y push son operaciones comunes en la programación de estructuras de datos, especialmente en el contexto de las pilas (stacks) y las colas (queues).
+
+pop: Esta operación se utiliza para eliminar y devolver el elemento en la cima de la pila (o al frente de la cola). En el caso de una pila, el elemento eliminado es el último que se agregó. En el caso de una cola, el elemento eliminado es el primero que se agregó.
+
+push: Esta operación se utiliza para agregar un elemento a la pila o a la cola. En el caso de una pila, el nuevo elemento se coloca en la cima. En el caso de una cola, el nuevo elemento se coloca al final. 
+
+Estas operaciones son fundamentales para el manejo de datos en estructuras de tipo LIFO (Last In, First Out) y FIFO (First In, First Out).";13:43:40 - 29/05/2024;;;
+17S1zEOZLF0natn;User;public void selectionSort() {;13:46:02 - 29/05/2024;Complete Solution;Sorting;Yes
+17S1zEOZLF0natn;semantic_search;"#### Quick Sort
+- Elige un dato, el pivote, de la lista.
+- Reordena la lista de forma que:
+  - Todos los datos menores que el pivote estén a la izquierda del pivote.
+  - Y los datos mayores a su derecha.
+- Ordena recursivamente:
+  - La sublista de los datos menores y
+  - La sublista de los datos mayores.
+
+```java
+public static void quickSort (int[] a) {
+    qSort(a, 0, a.length-1);
+}
+
+public static void qSort (int[] a, int l, int r) {
+    if (l>=r){
+         return;
+     }
+    int m = partition(a, l, r);
+    qSort(a,l,m-1);
+    qSort(a,m+1,r);
+}
+
+public static int partition (int[] a, int l, int r) {
+    int i=l+1; // left
+    int j=r; // right
+    int p=a[l]; // pivot
+    while (i<=j) {
+        if (a[i]<=p){
+            i++;
+        } else if (a[j]>p){
+            j--;
+        } else{
+             swap(a,i,j);
+         }
+    }
+     swap(a,l,j);
+    return j; 
+}
+
+public static void swap (int[] a, int i, int j) {
+    int aux=a[i];
+    a[i]=a[j];
+    a[j]=aux;
+ }
+
+Quick Sort.";13:46:02 - 29/05/2024;;;
+17S1zEOZLF0natn;CharlieBOT;"public void selectionSort() {
+    // Implementación del algoritmo de ordenamiento por selección
+}";13:46:03 - 29/05/2024;;;
+17S1zEOZLF0natn;User;"for (PPacket node1 = first; node1 != null; node1 = node1.getLink()) {
+PPacket min = node1;
+for (PPacket node2 = node1; node2 != null; node2 = node2.getLink()) {";13:46:05 - 29/05/2024;Code Snippet;Sorting;No
+17S1zEOZLF0natn;semantic_search;;13:46:05 - 29/05/2024;;;
+17S1zEOZLF0natn;CharlieBOT;"for (PPacket node1 = first; node1 != null; node1 = node1.getLink()) {
+    PPacket min = node1;
+    for (PPacket node2 = node1; node2 != null; node2 = node2.getLink()) {
+        // Implementación del bucle interno
+    }
+}";13:46:06 - 29/05/2024;;;
+17S1zEOZLF0natn;User;"if (min.getPriority() > node2.getPriority()) {
+min = node2;
+}
+}
+PPacket temp = new PPacket(node1.getPriority(), null);
+node1.setData(min.getPriority());";13:46:07 - 29/05/2024;Code Snippet;Sorting;No
+17S1zEOZLF0natn;semantic_search;;13:46:07 - 29/05/2024;;;
+17S1zEOZLF0natn;CharlieBOT;"if (min.getPriority() > node2.getPriority()) {
+    min = node2;
+}
+}
+PPacket temp = new PPacket(node1.getPriority(), null);
+node1.setData(min.getPriority());";13:46:09 - 29/05/2024;;;

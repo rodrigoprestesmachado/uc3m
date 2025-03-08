@@ -1,0 +1,22 @@
+Id;Role;Message;Datetime;Classification;Topic;Change
+c2BuztnHmO6uMXX;User;Give me an example of a recursive method in Java;09:17:14 - 04/07/2024;Code Snippet;Recursion;No
+c2BuztnHmO6uMXX;semantic_search;;09:17:14 - 04/07/2024;;;
+c2BuztnHmO6uMXX;CharlieBOT;"Sure! Here's an example of a recursive method in Java that calculates the factorial of a number:
+
+public class RecursiveExample {
+    public static int factorial(int n) {
+        if (n == 0) {
+            return 1;
+        } else {
+            return n * factorial(n - 1);
+        }
+    }
+
+    public static void main(String[] args) {
+        int number = 5;
+        int result = factorial(number);
+        System.out.println(""Factorial of "" + number + "" = "" + result);
+    }
+}
+
+In this example, the factorial method calls itself with a smaller value until it reaches the base case (n == 0), at which point it returns 1. Then, as the recursive calls unwind, the factorial is calculated.";09:17:16 - 04/07/2024;;;
