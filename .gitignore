@@ -10,4 +10,5 @@
 *.out
 *.bcf
 *.pdf
+.DS_Store
 uc3m/
