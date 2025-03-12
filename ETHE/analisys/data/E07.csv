@@ -1,0 +1,4 @@
+Id;Role;Message;Datetime;Classification;Topic;Change
+P01JTmsEWWX50NL;User;cual es el motivo por el que se ponen los getters y setters;18:10:19 - 14/02/2025;Conceptual Question;Object Orientation;No
+P01JTmsEWWX50NL;semantic_search;;18:10:19 - 14/02/2025;;;
+P01JTmsEWWX50NL;CharlieBOT;Los getters y setters se utilizan en Java para acceder y modificar los atributos de una clase de manera controlada. Esto permite mantener la encapsulación de los datos, lo que significa que el acceso a los atributos se realiza a través de métodos, lo que proporciona un nivel de seguridad y flexibilidad en la manipulación de los datos. Los getters permiten obtener el valor de un atributo, mientras que los setters permiten establecer o modificar el valor de un atributo. Esto es importante en la programación orientada a objetos, ya que ayuda a garantizar la coherencia y la integridad de los datos.;18:10:21 - 14/02/2025;;;

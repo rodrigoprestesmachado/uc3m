@@ -28,23 +28,25 @@ Interacting with GenAI-Powered Chatbots in Programming Courses.}
 %% Particle	-> \spfx{van der} -> surname prefix
 %% FamilyName	-> \sur{Ploeg}
 %% Suffix	-> \sfx{IV}
-%% \author*[1,2]{\fnm{Joergen W.} \spfx{van der} \sur{Ploeg} 
+%% \author*[1,2]{\fnm{Joergen W.} \spfx{van der} \sur{Ploeg}
 %%  \sfx{IV}}\email{iauthor@gmail.com}
 %%=============================================================%%
 
-\author*[1,2]{\fnm{Rodrigo} \sur{Prestes Machado}}\email{rodrigo.prestes@poa.ifrs.edu.br}
+\author*[1]{\fnm{Rodrigo} \sur{Prestes Machado}}\email{rodrigo.prestes@poa.ifrs.edu.br}
+\author*[2]{\fnm{Carlos} \sur{Alario-Hoyos}}\email{calario@it.uc3m.es}
+\author[2]{\fnm{Iria} \sur{Estévez-Ayres}}\email{ayres@it.uc3m.es}
+\author[2]{\fnm{Patricia} \sur{Callejo}}\email{pcallejo@it.uc3m.es}
+\author[2]{\fnm{Carlos} \sur{Delgado Kloos}}\email{cdk@it.uc3m.es}
 
-\author[2,3]{\fnm{Second} \sur{Author}}\email{iiauthor@gmail.com}
 \equalcont{These authors contributed equally to this work.}
 
-\author[1,2]{\fnm{Third} \sur{Author}}\email{iiiauthor@gmail.com}
-\equalcont{These authors contributed equally to this work.}
+\affil*[1]{\orgdiv{Informatics}, \orgname{Federal Institute of Education,
+Science and Technology}, \orgaddress{\street{Cel. Vicente}, \city{Porto Alegre},
+\postcode{90.030-041}, \state{Rio Grande do Sul}, \country{Brazil}}}
 
-\affil*[1]{\orgdiv{Department}, \orgname{Organization}, \orgaddress{\street{Street}, \city{City}, \postcode{100190}, \state{State}, \country{Country}}}
-
-\affil[2]{\orgdiv{Department}, \orgname{Organization}, \orgaddress{\street{Street}, \city{City}, \postcode{10587}, \state{State}, \country{Country}}}
-
-\affil[3]{\orgdiv{Department}, \orgname{Organization}, \orgaddress{\street{Street}, \city{City}, \postcode{610101}, \state{State}, \country{Country}}}
+\affil[2]{\orgdiv{Department of Telematics Engineering},
+\orgname{Universidad Carlos III}, \orgaddress{ \street{Av. de la Universidad},
+\city{Leganés}, \postcode{28911}, \state{Madrid}, \country{Spain}}}
 
 %%==================================%%
 %% Sample for unstructured abstract %%
@@ -69,24 +71,23 @@ Interleaving and Metacognition}
 
 \section{Introduction}\label{sec1}
 
-Recent advances in Generative Artificial Intelligence (GenAI) have created
-new opportunities in both professional programming and education \citep{Puryear22}.
-In programming courses, students can employ GenAI tools to improve their
+Recent advances in Generative Artificial Intelligence (GenAI) have created new
+opportunities in professional programming and education \citep{Puryear22}. In
+programming courses, students can employ GenAI tools to improve their
 understanding, receive personalized feedback, and access detailed explanations.
-For example, GitHub Copilot, a tool that is integrated into development
-environments, assists in providing real-time suggestions and accelerating code
-writing, which could help streamline the learning process. Educational chatbots,
-on the other hand, try to guide students through coding challenges, answer
-questions, and try to foster a deeper understanding of programming concepts.
+For example, GitHub Copilot, a tool integrated into development environments,
+assists in providing real-time suggestions and accelerating code writing, which
+could help streamline the learning process. On the other hand, educational
+chatbots try to guide students through coding challenges, answer questions, and
+foster a deeper understanding of programming concepts.
 
-The study conducted by \cite{chan23} revealed that both undergraduate and
-postgraduate students have positive attitudes towards the use of GenAI.
-A systematic review organized by \cite{Lo24} demonstrated that students can
-effectively learn from ChatGPT, resulting in improved comprehension and academic
-achievement \citep{Callejo24}. Furthermore, it was observed that ChatGPT may
-allow students to regulate their learning pace and can potentially support
-self-regulated learning, particularly for students with prior technical and
-disciplinary knowledge \citep{Xia23}.
+The study by \cite{chan23} revealed that undergraduate and postgraduate students
+have positive attitudes towards using GenAI. A systematic review organized by
+\cite{Lo24} demonstrated that students could effectively learn from ChatGPT,
+resulting in improved comprehension and academic achievement \citep{Callejo24}.
+Additionally, it was observed that ChatGPT can enable students to control their
+learning pace and may support self-regulated learning, especially for those with
+prior technical and disciplinary knowledge \citep{Xia23}.
 
 However, researchers have also expressed concerns about the impact of these
 tools on students. The systematic review by \cite{Murillo23} indicated that the
@@ -304,6 +305,28 @@ the quality and reliability of the chatbot's answers. A prior study on
 CharlieBot's performance revealed that most students found its responses
 appropriate for the Java programming course \citep{Hoyos24}.
 
+\begin{table*}[htbp]
+  \caption{Categories - adapted from \cite{Ghimire24}}
+  \begin{center}
+    \renewcommand{\arraystretch}{1.2} % Increase the spacing between rows
+    \begin{tabular}{p{4.1cm} p{4cm} p{3.7cm}} % Remove vertical bars
+      \hline
+      \textbf{Category} & \textbf{Description} & \textbf{Example of prompt} \\
+      \hline
+      Debugging Help (DH) & Prompts that seek help to identify, fix errors, or understand the provided code snippet. & \textit{Would this code be ok? \{code\}} \\
+      Conceptual Question (CQ) & Prompts that are more about understanding concepts than specific code. & \textit{What does it mean for a method to be static?} \\
+      Student Correction (SC) & Prompts where the student corrects the chatbot. & \textit{The correct answer is B} \\
+      Code Snippet  (CS) & Prompts that ask for a specific part of the code, like a function or a segment. & \textit{A class inherits from another write this code} \\
+      Complete Solution (CSO) & Prompts that request an entire solution or a complete code snippet. & \textit{Give me the code for a selection sort} \\
+      Multiple Question (MQ) & Prompts where the user wants to solve a multiple choice exercise (Quiz). & \textit{A heap is a data structure appropriate for: \{options\}} \\
+      Language Change (LC) & Prompts that request a change of idiom. & \textit{In Spanish} \\
+      Uncategorized (U) & Prompts that do not fit into any of the above categories. & \textit{Thanks} \\
+      \hline
+    \end{tabular}
+    \label{tab:categories}
+  \end{center}
+\end{table*}
+
 \subsection{Method}
 
 The study comprised three phases: data collection, categorization, and analysis.
@@ -318,29 +341,6 @@ During the categorization phase, the students' prompts were initially classified
 into eight distinct categories using the Claude.ai \citep{claude} tool.
 Subsequently, the authors of this study manually reviewed these classifications
 to ensure accuracy and alignment with the research objectives.
-
-\begin{table*}[htbp]
-    \caption{Categories - adapted from \cite{Ghimire24}}
-    \begin{center}
-      \renewcommand{\arraystretch}{1.2} % Increase the spacing between rows
-      \begin{tabular}{p{3cm} p{4cm} p{3cm}} % Remove vertical bars
-        \hline
-        \textbf{Category} & \textbf{Description} & \textbf{Example of prompt} \\
-        \hline
-        Debugging Help (DH) & Prompts that seek help to identify, fix errors, or understand the provided code snippet. & \textit{Would this code be ok? \{code\}} \\
-        Conceptual Question (CQ) & Prompts that are more about understanding concepts than specific code. & \textit{What does it mean for a method to be static?} \\
-        Student Correction (SC) & Prompts where the student corrects the chatbot. & \textit{The correct answer is B} \\
-        Code Snippet  (CS) & Prompts that ask for a specific part of the code, like a function or a segment. & \textit{A class inherits from another write this code} \\
-        Complete Solution (CSO) & Prompts that request an entire solution or a complete code snippet. & \textit{Give me the code for a selection sort} \\
-        Multiple Question (MQ) & Prompts where the user wants to solve a multiple choice exercise (Quiz). & \textit{A heap is a data structure appropriate for: \{options\}} \\
-        Language Change (LC) & Prompts that request a change of idiom. & \textit{In Spanish} \\
-        Uncategorized (U) & Prompts that do not fit into any of the above categories. & \textit{Thanks} \\
-        \hline
-      \end{tabular}
-      \label{tab:categories}
-    \end{center}
-  \end{table*}
-
 Initially, \cite{Ghimire24} proposed four categories: Debugging Help (DH),
 Conceptual Question (CQ), Code Snippet (CS), and Complete Solution (CSO).
 However, the data collected indicated the need for additional categories,

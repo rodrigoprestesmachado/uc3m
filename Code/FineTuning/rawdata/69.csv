@@ -1,0 +1,83 @@
+Id;Role;Message;Datetime;Classification;Topic;Change
+K3H4qUU37Abx3MK;User;me puedes hacer un codigo para el bubble sort;08:48:01 - 29/05/2024;Complete Solution;Sorting;No
+K3H4qUU37Abx3MK;semantic_search;;08:48:01 - 29/05/2024;;;
+K3H4qUU37Abx3MK;CharlieBOT;"¡Claro que sí! Aquí tienes un ejemplo de código para el algoritmo de ordenamiento de burbuja en Java:
+
+public class BubbleSort {
+    public static void main(String[] args) {
+        int[] arr = {64, 34, 25, 12, 22, 11, 90};
+        
+        System.out.println(""Arreglo desordenado:"");
+        printArray(arr);
+        
+        bubbleSort(arr);
+        
+        System.out.println(""\nArreglo ordenado:"");
+        printArray(arr);
+    }
+    
+    static void bubbleSort(int[] arr) {
+        int n = arr.length;
+        for (int i = 0; i < n-1; i++)
+            for (int j = 0; j < n-i-1; j++)
+                if (arr[j] > arr[j+1]) {
+                    // intercambiar arr[j] y arr[j+1]
+                    int temp = arr[j];
+                    arr[j] = arr[j+1];
+                    arr[j+1] = temp;
+                }
+    }
+    
+    static void printArray(int[] arr) {
+        int n = arr.length;
+        for (int i=0; i<n; ++i)
+            System.out.print(arr[i] + "" "");
+        System.out.println();
+    }
+}
+
+Este código ordenará un arreglo de números utilizando el algoritmo de ordenamiento de burbuja. Espero que te sea útil. Si tienes alguna otra pregunta, no dudes en preguntar.";08:48:05 - 29/05/2024;;;
+K3H4qUU37Abx3MK;User;y en generico;08:50:56 - 29/05/2024;Code Snippet;Sorting;No
+K3H4qUU37Abx3MK;semantic_search;;08:50:56 - 29/05/2024;;;
+K3H4qUU37Abx3MK;CharlieBOT;"Claro, puedo mostrarte cómo implementar el algoritmo de ordenamiento de burbuja de manera genérica en Java utilizando el concepto de programación genérica. Aquí tienes un ejemplo:
+
+public class BubbleSort {
+    public static <T extends Comparable<T>> void bubbleSort(T[] arr) {
+        int n = arr.length;
+        for (int i = 0; i < n-1; i++) {
+            for (int j = 0; j < n-i-1; j++) {
+                if (arr[j].compareTo(arr[j+1]) > 0) {
+                    // intercambiar arr[j] y arr[j+1]
+                    T temp = arr[j];
+                    arr[j] = arr[j+1];
+                    arr[j+1] = temp;
+                }
+            }
+        }
+    }
+    
+    public static void main(String[] args) {
+        Integer[] intArr = {64, 34, 25, 12, 22, 11, 90};
+        System.out.println(""Arreglo desordenado:"");
+        printArray(intArr);
+        bubbleSort(intArr);
+        System.out.println(""\nArreglo ordenado:"");
+        printArray(intArr);
+        
+        String[] stringArr = {""c"", ""a"", ""e"", ""b"", ""d""};
+        System.out.println(""\nArreglo desordenado:"");
+        printArray(stringArr);
+        bubbleSort(stringArr);
+        System.out.println(""\nArreglo ordenado:"");
+        printArray(stringArr);
+    }
+    
+    public static <T> void printArray(T[] arr) {
+        for (T t : arr) {
+            System.out.print(t + "" "");
+        }
+        System.out.println();
+    }
+}
+
+En este ejemplo, la función bubbleSort está definida como genérica, lo que permite ordenar arreglos de cualquier tipo que implemente la interfaz Comparable. Luego se muestra un ejemplo de ordenamiento de un arreglo de enteros y un arreglo de cadenas. Espero que esto te sea útil. Si tienes más preguntas, no dudes en preguntar.";08:51:00 - 29/05/2024;;;

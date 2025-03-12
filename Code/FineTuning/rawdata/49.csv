@@ -1,0 +1,217 @@
+Id;Role;Message;Datetime;Classification;Topic;Change
+FExcSeLld9tBMxK;User;Que es StackOverflowError;10:01:03 - 29/05/2024;Conceptual Questions;Java;No
+FExcSeLld9tBMxK;semantic_search;;10:01:03 - 29/05/2024;;;
+FExcSeLld9tBMxK;CharlieBOT;El StackOverflowError es una excepción que ocurre en Java cuando la pila de llamadas a métodos (stack) se desborda, es decir, cuando se intenta agregar más elementos de los que la pila puede contener. Esto suele ocurrir cuando hay una recursión infinita o una recursión muy profunda en el código. Es importante revisar el código para identificar la causa de la recursión infinita y corregirla para evitar este error.;10:01:05 - 29/05/2024;;;
+FExcSeLld9tBMxK;User;cual es la diferencia entre ++m y m++;10:02:11 - 29/05/2024;Conceptual Questions;Java;No
+FExcSeLld9tBMxK;semantic_search;;10:02:11 - 29/05/2024;;;
+FExcSeLld9tBMxK;CharlieBOT;"En Java, ++m y m++ son operadores de incremento que aumentan el valor de la variable m en 1. La diferencia entre ellos radica en el valor que devuelven y cuándo se realiza el incremento.  ++m es el operador de pre-incremento, lo que significa que primero se incrementa el valor de m y luego se devuelve el valor incrementado. m++ es el operador de post-incremento, lo que significa que primero se devuelve el valor actual de m y luego se incrementa el valor de m.  Por ejemplo:
+int m = 5;
+int a = ++m; // a = 6, m = 6
+int b = m++; // b = 6, m = 7
+Es importante entender esta distinción al utilizar estos operadores en expresiones para evitar resultados inesperados.";10:02:14 - 29/05/2024;;;
+FExcSeLld9tBMxK;User;"Dado el siguiente método recursivo, ¿qué frase es correcta si este método se llama con a igual a 4 y h igual a 2? public static int method(int a, int b){ if(a ‹ b){ return 2; jelse{ } Seleccione una: O O a. Es una recursión en cascada. b. La llamada method(4,2) lleva a un StackOverflowError. c. La llamada method(4,2) devuelve 4 como resultado. d. La llamada method(4,2) devuelve 6 como resultado.";10:03:41 - 29/05/2024;Multiple Question Exercise;Recursion;Yes
+FExcSeLld9tBMxK;semantic_search;"return método(n, método(n-1)); Recursión en cascada: Fibonacci Serie de Fibonacci (con n > 0)
+public static long fib(int n){
+   if (n<=1){
+      return 1;
+   }
+   else{
+      return fib(n-1)+fib(n-2);
+   }
+}
+
+Conversión a recursión lineal de Fibonacci
+public static long fibo(int n, int x, int y){
+   if (n<=1){
+      return x+y;
+   }
+   else {
+      return fibo(n-1, y, x+y);
+   }
+}
+     
+public static long fib (int n){
+   return fibo(n,0,1);
+}
+
+Recursión anidada: Morris
+public static int mor(int n, int m){
+   if (n==m){
+      return (m+1);
+   }
+   else{
+      return(mor(n, mor(n-1, m+1)));
+   }
+}
+
+❚ mor(4,0) =
+❚ mor(4, mor(3,1)) =
+❚ mor(4, mor(3, mor(2,2)) =
+❚ mor(4, mor(3,3)) =
+❚ mor(4,4) =
+❚ 5
+Ejercicio 3
+Implementa el método recursivo a(int m, int n) que permite calcular la función de Ackermann-Péter tal y como se define a continuación:
+Recursión mutua
+public static boolean par(int n){
+   if (n==0){
+      return true;
+   }
+   else{
+      return impar(n-1);
+   }
+}
+     
+public static boolean impar(int n){
+   if (n==0){
+      return false;
+   }
+   else{
+      return par(n-1);
+   }
+}
+
+La recursión lineal por la cola se puede convertir de forma inmediata en iteración (bucle)
+Para otras formas de recursión se requieren técnicas de transformación de programas y posiblemente estructuras de datos más complejas.
+Recursión vs. Iteración
+""The transformation from recursion to iteration is one of the most fundamental concepts of computer science."" D.";10:03:41 - 29/05/2024;;;
+FExcSeLld9tBMxK;CharlieBOT;La frase correcta si el método se llama con a igual a 4 y b igual a 2 es: b. La llamada method(4,2) lleva a un StackOverflowError. Dado que no hay una condición base que detenga la recursión cuando a es menor que b, el método seguirá llamándose a sí mismo indefinidamente, lo que eventualmente llevará a un StackOverflowError debido a la sobrecarga de la pila de llamadas.;10:03:43 - 29/05/2024;;;
+FExcSeLld9tBMxK;User;"cual es la diferencia con este otro metodo: Dado el siguiente método recursivo, qué frase es correcta si se llama a este método con n igual a 4 y m igual a 3. public static int method(int n, int m) { if(n < m)t return 3; }else{ return 2*method (n--, ++m); Seleccione una: O a. La llamada a method(4,3) devuelve 12 como resultado. b. La llamada a method(4,3) devuelve 6 como resultado. c. La Ilamada a method(4,3) causa un StackOverflowError d. Este es un caso de recursión lineal no por la cola.";10:04:55 - 29/05/2024;Multiple Question Exercise;Recursion;No
+FExcSeLld9tBMxK;semantic_search;"return método(n, método(n-1)); Recursión en cascada: Fibonacci Serie de Fibonacci (con n > 0)
+public static long fib(int n){
+   if (n<=1){
+      return 1;
+   }
+   else{
+      return fib(n-1)+fib(n-2);
+   }
+}
+
+Conversión a recursión lineal de Fibonacci
+public static long fibo(int n, int x, int y){
+   if (n<=1){
+      return x+y;
+   }
+   else {
+      return fibo(n-1, y, x+y);
+   }
+}
+     
+public static long fib (int n){
+   return fibo(n,0,1);
+}
+
+Recursión anidada: Morris
+public static int mor(int n, int m){
+   if (n==m){
+      return (m+1);
+   }
+   else{
+      return(mor(n, mor(n-1, m+1)));
+   }
+}
+
+❚ mor(4,0) =
+❚ mor(4, mor(3,1)) =
+❚ mor(4, mor(3, mor(2,2)) =
+❚ mor(4, mor(3,3)) =
+❚ mor(4,4) =
+❚ 5
+Ejercicio 3
+Implementa el método recursivo a(int m, int n) que permite calcular la función de Ackermann-Péter tal y como se define a continuación:
+Recursión mutua
+public static boolean par(int n){
+   if (n==0){
+      return true;
+   }
+   else{
+      return impar(n-1);
+   }
+}
+     
+public static boolean impar(int n){
+   if (n==0){
+      return false;
+   }
+   else{
+      return par(n-1);
+   }
+}
+
+La recursión lineal por la cola se puede convertir de forma inmediata en iteración (bucle)
+Para otras formas de recursión se requieren técnicas de transformación de programas y posiblemente estructuras de datos más complejas.
+Recursión vs. Iteración
+""The transformation from recursion to iteration is one of the most fundamental concepts of computer science."" D.Knuth, 1974
+Cálculo del factorial fac(n) = n! = n*(n-1)(n-2)…21  (con n > 0 y m = 1)
+public static long fac(int n, int m){
+   if (n<=1){
+      return m;
+   }
+    else{
+      return fac(n-1, n*m);
+   }
+}
+
+public static long fac(int n, int m){
+    while (! (n <= 1)){
+        m = n * m;
+        n = n - 1;
+    }
+    return m;
+}
+
+RecursiónIteración
+Ejercicio 4
+Implementa el método recursivo mcd(int a, int b) el cual permite calcular el máximo común divisor de dos números enteros.
+Ejercicio 5
+Implementa el método recursivo decToBin(int decimal, String binary) el cual recibe un número decimal y devuelve una cadena con el equivalente en binario de dicho número decimal.
+Resumen
+ Identificar el rango de valores para terminación
+Caso(s) base y caso(s) recursivos que se aproximan al base
+Recursión lineal (máx. 1 llamada recursiva por rama)
+Por la cola (resultado en la última operación y fácilmente convertible a bucle)
+No por la cola (cálculo costoso)
+ 
+Recursión no lineal (más de 1 llamada recursiva en alguna rama)
+Cascada o anidada";10:04:55 - 29/05/2024;;;
+FExcSeLld9tBMxK;CharlieBOT;La frase correcta si se llama a este método con n igual a 4 y m igual a 3 es: d. Este es un caso de recursión lineal no por la cola. Dado que la llamada recursiva no es la última operación en el método, este es un caso de recursión lineal no por la cola. El resultado de la llamada a method(4,3) no es inmediatamente evidente y no causa un StackOverflowError.;10:04:57 - 29/05/2024;;;
+FExcSeLld9tBMxK;User;pero cual es la diferencia entre los dos metodos;10:05:56 - 29/05/2024;Conceptual Questions;Recursion;No
+FExcSeLld9tBMxK;semantic_search;;10:05:56 - 29/05/2024;;;
+FExcSeLld9tBMxK;CharlieBOT;La diferencia principal entre los dos métodos es la forma en que se realiza la recursión.  En el primer método, no hay una condición base que detenga la recursión cuando a es menor que b, lo que lleva a un potencial StackOverflowError debido a la recursión infinita. En el segundo método, se realiza una llamada recursiva al método method al final del método, lo que lo convierte en un caso de recursión lineal no por la cola. Esto significa que la llamada recursiva no es la última operación en el método, lo que puede llevar a un mayor uso de la pila y a un mayor riesgo de StackOverflowError en comparación con la recursión por la cola.;10:05:58 - 29/05/2024;;;
+FExcSeLld9tBMxK;User;cual es la condicion base de la que hablas;10:06:13 - 29/05/2024;Conceptual Questions;Recursion;No
+FExcSeLld9tBMxK;semantic_search;;10:06:13 - 29/05/2024;;;
+FExcSeLld9tBMxK;CharlieBOT;"La condición base a la que me refiero es la condición que detiene la recursión. En el contexto de la función method, la condición base sería aquella que verifica si n es menor que m. Cuando esta condición se cumple, la recursión se detiene y se devuelve un valor sin realizar más llamadas recursivas. En el caso del método dado, la condición base sería:
+if (n < m) {
+    return 3;
+}";10:06:15 - 29/05/2024;;;
+FExcSeLld9tBMxK;User;enseñame una interfaz;13:08:07 - 29/05/2024;Code Snippet;Java;Yes
+FExcSeLld9tBMxK;semantic_search;;13:08:07 - 29/05/2024;;;
+FExcSeLld9tBMxK;CharlieBOT;"public interface SistemaOperativo {
+    public void iniciar();
+    public void apagar();
+    public void reiniciar();
+    public void abrirAplicacion(String nombreAplicacion);
+    public void cerrarAplicacion(String nombreAplicacion);
+}
+
+En este ejemplo, he definido una interfaz llamada SistemaOperativo que contiene métodos para iniciar, apagar, reiniciar, abrir y cerrar aplicaciones. Las clases que implementen esta interfaz deberán proporcionar una implementación para cada uno de estos métodos. Las interfaces son útiles para definir un conjunto de métodos que deben ser implementados por cualquier clase que las utilice.";13:08:09 - 29/05/2024;;;
+FExcSeLld9tBMxK;User;con atributos;13:08:22 - 29/05/2024;Code Snippet;Java;No
+FExcSeLld9tBMxK;semantic_search;;13:08:22 - 29/05/2024;;;
+FExcSeLld9tBMxK;CharlieBOT;"En Java, las interfaces no pueden contener atributos, solo métodos. Si necesitas definir atributos, puedes utilizar una clase abstracta en su lugar. Aquí tienes un ejemplo de una clase abstracta con atributos y métodos:
+public abstract class SistemaOperativo {
+    protected String version;
+    protected int memoriaRequerida;
+    
+    public SistemaOperativo(String version, int memoriaRequerida) {
+        this.version = version;
+        this.memoriaRequerida = memoriaRequerida;
+    }
+    
+    public abstract void iniciar();
+    public abstract void apagar();
+    public abstract void reiniciar();
+    public abstract void abrirAplicacion(String nombreAplicacion);
+    public abstract void cerrarAplicacion(String nombreAplicacion);
+}
+
+En este ejemplo, la clase abstracta SistemaOperativo tiene atributos version y memoriaRequerida, y define métodos abstractos que deben ser implementados por las clases que hereden de ella.";13:08:25 - 29/05/2024;;;

@@ -1,0 +1,42 @@
+Id;Role;Message;Datetime;Classification;Topic;Change
+8QXiayqFhsK9MZz;User;"Dado el array data = f0, 1, 2, 3g, >cu´al es el valor de data tras terminar la ejecuci´on del siguiente m´etodo?
+public void mystery(int[] data) {
+    if(data.length>=2) {
+        for(int i=data.length; i>0; i--)
+            data[i] = data[i]*data[i-1];
+    }
+}
+(a) El m´etodo lanza una excepci´on del tipo ArrayIndexOutOfBoundsException.
+(b) f0, 0, 2, 6g.
+(c) f0, 2, 6, 3g.
+(d) f0, 1, 2, 6g.";08:37:41 - 22/06/2024;Multiple Question Exercise;Java;No
+8QXiayqFhsK9MZz;semantic_search;;08:37:41 - 22/06/2024;;;
+8QXiayqFhsK9MZz;CharlieBOT;El valor de data tras terminar la ejecución del método será: (d) f0, 1, 2, 6g. El método recorre el array de derecha a izquierda multiplicando cada elemento por el elemento anterior, por lo que el resultado final será f0, 1, 2, 6g. Si tienes alguna otra pregunta, no dudes en preguntar.;08:37:42 - 22/06/2024;;;
+8QXiayqFhsK9MZz;User;"Dada la clase Vehicle (veh´ıculo) con el m´etodo public abstract int getMaxSpeed() que devuelve su velocidad m´axima, indica cu´al de las siguientes afirmaciones es INCORRECTA:
+(a) El resto de m´etodos de la clase Vehicle tambi´en tienen que ser abstractos.
+(b) Las clases derivadas de Vehicle pueden ser o no ser abstractas.
+(c) S´olo se podr´a crear un objeto de una clase derivada si esa clase implementa el m´etodo getMaxSpeed().
+(d) Aunque sea abstracta, Vehicle puede tener uno o varios constructores.";08:39:43 - 22/06/2024;Multiple Question Exercise;Object Orientation;Yes
+8QXiayqFhsK9MZz;semantic_search;;08:39:43 - 22/06/2024;;;
+8QXiayqFhsK9MZz;CharlieBOT;La afirmación incorrecta es: (c) Sólo se podrá crear un objeto de una clase derivada si esa clase implementa el método getMaxSpeed(). Esta afirmación es incorrecta porque se puede crear un objeto de una clase derivada de Vehicle aunque no implemente el método abstracto getMaxSpeed(). Sin embargo, si la clase derivada no es abstracta, entonces deberá implementar todos los métodos abstractos de la clase base. Si necesitas más ayuda, no dudes en preguntar.;08:39:45 - 22/06/2024;;;
+8QXiayqFhsK9MZz;User;porque es esa la respuesta si en una clase no es necesario que todos los metodos sean abstractos;08:40:27 - 22/06/2024;Student Correction;Object Orientation;No
+8QXiayqFhsK9MZz;semantic_search;;08:40:27 - 22/06/2024;;;
+8QXiayqFhsK9MZz;CharlieBOT;Tienes razón, me equivoqué en mi respuesta. La respuesta correcta es: (a) El resto de métodos de la clase Vehicle también tienen que ser abstractos. La afirmación (a) es incorrecta, ya que el resto de métodos de la clase Vehicle no tienen que ser abstractos. Una clase abstracta puede tener tanto métodos abstractos como métodos concretos. Gracias por señalar el error, y si tienes más preguntas, no dudes en preguntar.;08:40:29 - 22/06/2024;;;
+8QXiayqFhsK9MZz;User;"Dada la clase A y el siguiente fragmento de c´odigo, indica cu´al ser´ıa el modo m´as adecuado de llamar a los m´etodos m1 y m2 desde el m´etodo main, una vez creado el objeto a.
+public class A {
+    public void m1(){ ... }
+    public static void m2(){ ... }
+    public static void main(String[] args) {
+        A a = new A();
+        ...
+    }
+}
+(a) a.m1(); A.m2();
+(b) A.m1(); A.m2();
+(c) A.m1(); a.m2();
+(d) a.m1(); a.m2();";08:41:56 - 22/06/2024;Multiple Question Exercise;Object Orientation;No
+8QXiayqFhsK9MZz;semantic_search;avanzada del sistema – Opciones avanzadas - Variables de entorno Estructura del Lenguaje Java Escenario II: Comprender el código  Te informan de que en tan solo una hora es la primera reunión de programadores y para entonces tienes que haber revisado el código y tener una idea de cómo funciona la aplicación. Objetivo: Coger soltura leyendo las estructuras del lenguaje relacionadas con clases, atributos y métodos para con un vistazo rápido comprender el funcionamiento de un programa complejo con varios ficheros. Plan de trabajo: Repasar brevemente la sintaxis del lenguaje (identificadores, palabras reservadas, etc.) para ser capaz de distinguir las palabras propias del lenguaje Java de la nomenclatura del programa. Reconocer las construcciones propias del lenguaje relacionadas con la declaración de clases, atributos (tipos básicos y de referencia) y métodos. Extraer un diagrama de clases a la vista del código para conocer tipos de objetos desarrolladas, sus características (atributos) y comportamientos (métodos). Interpretar el método main (si existe) para ver el orden en el que se desarrolla la aplicación que objetos se crean, a cuales de sus métodos se invoca y en qué orden.    Estructura del código  Programa: Clases (ficheros.java) Miembros: Atributos (Tipo de referencia, Tipo Primitivo), Métodos (Normales, Constructor, Main, Métodos Especiales) Objetos: Arrays, String  Cómo representamos en Java las clases y los objetos.  Declaración de una clase Declaración de un atributo (constantes o variables) Declaración de un método Creación de un objeto Identificadores Palabras reservadas Tipos primitivos y de referencia en Java  Java imperativo Escenario III: Implementar un método  Una vez terminada la reunión de programadores y para probar tu pericia antes de integrarte en el equipo, tu jefe decide encargarte la implementación de varios métodos sencillos.;08:41:56 - 22/06/2024;;;
+8QXiayqFhsK9MZz;CharlieBOT;"El modo más adecuado de llamar a los métodos m1 y m2 desde el método main, una vez creado el objeto a, sería: (d) a.m1(); a.m2(); En este caso, el método m1 es un método de instancia, por lo que debe ser llamado a través de un objeto de la clase A. Por otro lado, el método m2 es un método estático, por lo que puede ser llamado directamente a través del nombre de la clase o a través de un objeto de la clase, aunque se recomienda llamarlo a través del nombre de la clase para mayor claridad. Si tienes más preguntas, no dudes en preguntar.";08:41:58 - 22/06/2024;;;
+8QXiayqFhsK9MZz;User;seguro?;08:42:02 - 22/06/2024;Student Correction;Object Orientation;No
+8QXiayqFhsK9MZz;semantic_search;;08:42:02 - 22/06/2024;;;
+8QXiayqFhsK9MZz;CharlieBOT;"Mis disculpas, me equivoqué en mi respuesta. El modo más adecuado de llamar a los métodos m1 y m2 desde el método main, una vez creado el objeto a, sería: (a) a.m1(); A.m2(); El método m1 es un método de instancia, por lo que debe ser llamado a través de un objeto de la clase A. Por otro lado, el método m2 es un método estático, por lo que se llama a través del nombre de la clase A. Gracias por señalar el error, y si tienes más preguntas, no dudes en preguntar.";08:42:04 - 22/06/2024;;;

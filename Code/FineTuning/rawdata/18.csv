@@ -1,0 +1,20 @@
+Id;Role;Message;Datetime;Classification;Topic;Change
+bxaH69xF0K0mi2p;User;como era o bubblesort;10:23:14 - 24/06/2024;Conceptual Questions;Sorting;No
+bxaH69xF0K0mi2p;semantic_search;;10:23:14 - 24/06/2024;;;
+bxaH69xF0K0mi2p;CharlieBOT;"O algoritmo de ordenamento Bubble Sort é um algoritmo sencillo que funciona recorrendo repetidamente a lista, comparando elementos adjacentes e cambiándolos de posição se estão na ordem incorreta. O recorrido através da lista se repite até que não se necessitam mais intercâmbios, o que indica que a lista está ordenada. O pseudocódigo do algoritmo Bubble Sort é o seguinte:
+
+void bubbleSort(int arr[]) {
+    int n = arr.length;
+    for (int i = 0; i < n-1; i++) {
+        for (int j = 0; j < n-i-1; j++) {
+            if (arr[j] > arr[j+1]) {
+                // intercambiar arr[j] e arr[j+1]
+                int temp = arr[j];
+                arr[j] = arr[j+1];
+                arr[j+1] = temp;
+            }
+        }
+    }
+}
+
+É importante recordar que o Bubble Sort não é muito eficiente em termos de tempo de execução, especialmente para listas grandes, já que tem uma complexidade de O(n^2). Por lo tanto, se suelen preferir outros algoritmos de ordenamento mais eficientes, como o Quick Sort ou o Merge Sort. Espero que esta explicação te seja de ajuda. Se tens alguma outra pergunta relacionada com a programação de sistemas, não duvides em perguntar.";10:23:18 - 24/06/2024;;;
