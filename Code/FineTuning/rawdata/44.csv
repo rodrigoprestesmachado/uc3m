@@ -1,4 +1,0 @@
-Id;Role;Message;Datetime;Classification;Topic;Change
-7CSAoQtTNVtOFAB;User;¿Se necesitan las palabras reservadas static y final cuando se declaran variables en una interfaz?;12:30:23 - 30/05/2024;Conceptual Questions;Java;No
-7CSAoQtTNVtOFAB;semantic_search;;12:30:23 - 30/05/2024;;;
-7CSAoQtTNVtOFAB;CharlieBOT;¡Hola! En una interfaz de Java, todas las variables son implícitamente public, static y final. Por lo tanto, no es necesario utilizar esas palabras reservadas al declarar variables en una interfaz.  Si tienes alguna otra pregunta, no dudes en preguntar.;12:30:24 - 30/05/2024;;;

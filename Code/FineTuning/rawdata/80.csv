@@ -1,7 +1,0 @@
-Id;Role;Message;Datetime;Classification;Topic;Change
-huYtMGT8UukmKGs;User;cuando tengo una variable double que por lo que sea no tiene decimales tengo que ponerlo como 5 o como 5.00;17:24:14 - 28/05/2024;Conceptual Questions;Java;No
-huYtMGT8UukmKGs;semantic_search;;17:24:14 - 28/05/2024;;;
-huYtMGT8UukmKGs;CharlieBOT;En el caso de una variable double que no tiene decimales, puedes representarla simplemente como 5. No es necesario añadir los decimales si el valor es un número entero. La representación 5.00 sería equivalente en términos de valor, pero en este caso no es necesario especificar los decimales si no los hay.;17:24:16 - 28/05/2024;;;
-huYtMGT8UukmKGs;User;que es el stack overflow erroe;20:20:43 - 28/05/2024;Conceptual Questions;Java;No
-huYtMGT8UukmKGs;semantic_search;;20:20:43 - 28/05/2024;;;
-huYtMGT8UukmKGs;CharlieBOT;"El error ""Stack Overflow"" ocurre cuando la pila de llamadas a funciones en un programa alcanza su límite máximo de capacidad. Esto puede suceder cuando una función se llama a sí misma de forma recursiva sin un caso base que detenga la recursión, lo que provoca que la pila se llene con llamadas a la misma función y genere el error. Es importante tener en cuenta el manejo adecuado de la recursión para evitar este tipo de errores.";20:20:45 - 28/05/2024;;;

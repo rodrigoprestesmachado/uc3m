@@ -140,9 +140,9 @@ class GitHubMarkdown:
 # Example usage
 if __name__ == "__main__":
 
-		url = "https://github.com/orion-services"
-		project_name = "ai"
-		markdown_folder = "doc"
+		url = "https://github.com/rodrigoprestesmachado"
+		project_name = "pw2"
+		markdown_folder = "docs"
 
 		# Create an instance of the GitHubMarkdown and process the markdown
 		# files

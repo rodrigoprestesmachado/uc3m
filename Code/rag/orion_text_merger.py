@@ -60,7 +60,7 @@ class TextMerger:
 
 if __name__ == "__main__":
     # Specify the directory containing the text files and the output file name
-    directory = '/Users/rodrigo/Downloads/documentation/'
+    directory = '/Users/rodrigo/dev/uc3m/Code/rag/text_files'
     output_file = 'merged.txt'
 
     # Create an instance of the TextMerger class
