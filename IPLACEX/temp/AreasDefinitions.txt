@@ -1,0 +1,15 @@
+1) Ciencias de la Salud
+	* Escuela de Gastronomía
+	* Escuela de Salud
+
+2) Ingeniería y Tecnología
+	* Escuela de Construcción
+	* Escuela de Tecnología
+	* Escuela de Informática y Telecomunicaciones
+
+3) Ciencias Sociales y Humanidades
+	* Escuela de Desarrollo Social y Servicio Público
+	* Escuela de Educación
+
+4) Negocios y Administración
+	* Escuela de Administración y Negocios
