@@ -12,3 +12,6 @@
 *.pdf
 .DS_Store
 uc3m/
+
+# Temporary files
+IPLACEX/data/temp
