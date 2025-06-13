@@ -69,7 +69,86 @@ Interleaving and Metacognition}
 
 \maketitle
 
+
 \section{Introduction}\label{sec1}
+
+
+For more than a decade, Chilean higher education has experienced a substantial
+increase in enrolment. In 2024, total enrolment reached 1,777,340 students,
+concentrated primarily in universities (55.3\%), followed by professional
+institutes (Institutos Profesionales, 33.4) and technical training centres
+(Centros de Formación Técnica, 11.4\%). Within this context, distance-learning
+programmes constitute a significant trend, accounting for 12.4\% of total
+undergraduate enrolment. Between 2023 and 2024, distance programmes grew by
+11.8\%—adding 16,700 students—whereas full-time on-campus programmes rose by
+1.8\%, with nearly 16,000 additional students \citep{SIES2024Matriculas}.
+These figures underscore the growing importance of distance education in Chile
+and highlight the need to analyze institutions where technology plays a central
+role in learning processes.
+
+At Instituto Profesional Iplacex, enrolment has risen steadily, reaching 41,028
+students in 2024, of whom 12,044 are new entrants. These numbers position
+Iplacex as the largest distance-learning higher-education institution in Chile.
+The average age of newly enrolled students is 35 years, with the majority
+between 30 and 39. Consequently, the student body largely comprises working
+adults seeking to enhance their career prospects through further study—either
+upgrading existing skills (upskilling) or acquiring competencies for new roles
+(reskilling).
+
+Within this framework, technology is pivotal to the academic processes of
+distance-learning institutions. In addition to conventional platforms such as
+Blackboard, Canvas and Moodle, generative artificial intelligence (GenAI) has
+recently entered higher education, enabling new technological applications that
+support students’ learning experiences. At Iplacex, GenAI has been deployed
+through chatbots in approximately 85\% of the institution’s courses.
+
+The innovation implemented at Iplacex responds to the need for a virtual
+assistant embedded in each course via an API integrated into Blackboard. Each
+chatbot is configured with a prompt that supplies course-specific information,
+providing answers related both to course content and administrative matters.
+
+GenAI presents new opportunities for higher-education institutions
+\citep{Puryear22}, one of the most prominent being conversational chatbots
+(Labadze et al., 2023). Chatbots may be defined as “conversational agents that
+simulate human dialogue through natural-language processing and machine-learning
+algorithms” \citep[p.~1]{Stoehr24A}.
+
+International evidence concerning GenAI indicates diverse effects on students,
+prompting a redefinition of teaching and learning processes  \citep{Bahroun23}.
+GenAI is regarded as a key factor in personalizing and adapting
+distance-education experiences \citep{Essa23, Ilic23, Kadaruddin23} and
+influencing both the academic and everyday lives of students
+\citep{Chen20Review}. Research has further documented positive student
+attitudes toward GenAI at undergraduate and postgraduate levels  \citep{chan23}.
+
+Studies also show that student use of chatbots can enhance learning, leading to
+improved understanding and academic performance \citep{Callejo24,Lo24}. Their
+use is associated with more effective learning regulation \citep{Baha24} and
+significantly supports self-regulation, particularly among students with prior
+technical or disciplinary training \citep{Xia23}. In addition, conversational
+agents positively affect students’ academic engagement \citep{Lo24} and
+motivation levels \citep{Cubillos25}. Learning, engagement and motivation are
+critical factors in distance education \citep{Abdelghani23}.
+
+In Chile, research on GenAI remains incipient, with most studies originating in
+North America, Asia and Europe \citep{Rivadeneira24}. Preliminary Chilean
+findings \citep{Romero24} confirm the relevance of AI for higher-education
+institutions \citep{GonzalezCampos24} and its influence on student motivation
+\citep{Cubillos25}.
+
+
+Methodologically, research on GenAI and conversational agents has employed
+literature reviews \citep{Anchapaxi24, Choque23, Dempere23, GarciaSanchez23,
+Labadze23, Lo24, Romero24}, qualitative approaches \citep{GonzalezCampos24,
+Kadaruddin23, MoranOrtega24, Stone23}, quantitative designs
+\citep{Carrasco24, chan23, Cherrez24}—some with control groups
+\citep{Baha24, Cubillos25, Vazquez21}—and, to a lesser extent, mixed-methods
+studies \citep{Polakova24}.
+
+Against this backdrop, the present study seeks to identify the profile of
+students who have interacted with the chatbot.
+
+%% Rodrigo's old text
 
 Recent advances in Generative Artificial Intelligence (GenAI) have created new
 opportunities in professional programming and education \citep{Puryear22}. In
@@ -181,7 +260,7 @@ has been shown to improve long-term retention and understanding of the material
 \citep{Carvalho20}. Interleaving involves mixing different topics or problems
 within a single learning session, which has been shown to also enhance long-term
 learning and the application of student's knowledge in other contexts and
-situations \citep{Rivers21} .
+situations \citep{Rivers21}.
 
 \subsection{Related Work}
 
@@ -197,23 +276,6 @@ grades tended to use AI less frequently or later in the problem-solving process
 and perceived it as less useful compared to their peers. However, no significant
 relationship was found between students’ self-regulation strategies and their
 use of AI.
-
-% \cite{Boudouaia24} investigated the impact of ChatGPT-facilitated programming on
-% college students’ programming behaviors, performance, and perceptions. The
-% problem addressed was whether the use of ChatGPT in programming education could
-% influence how students interacted with programming tasks, their learning
-% outcomes, and their attitudes towards technology. The study employed a
-% quasi-experimental design involving 82 college students divided into two groups:
-% one using ChatGPT-assisted Programming (CAP) and the other using traditional
-% self-directed Programming (SDP). The method combined mixed data collection
-% techniques, including behavioral logs, programming performance evaluations, and
-% interviews. The results showed that students using the CAP mode exhibited more
-% frequent behaviors such as debugging and reading feedback. Although CAP students
-% had a higher average score in programming performance, there was no
-% statistically significant difference compared to the SDP group. However,
-% students’ perceptions of ChatGPT improved significantly after the intervention,
-% with increased perceived usefulness, ease of use, and intention to continue
-% using the tool in the future.
 
 The study of \cite{Boudouaia24} examined the effects of ChatGPT-assisted
 programming on university students' behaviors, performance, and perceptions.
@@ -288,21 +350,21 @@ abilities for more effective collaboration.
 
 \section{\uppercase{Material and Method}}
 
-This section outlines the tools and procedures used in this study. CharlieBot
-served as the GenAI tool for educational purposes, and the method was structured
-into three distinct phases, each designed to systematically assess its
-interaction with students.
+This section outlines the tools and procedures used in this study. Iplacex
+ChatBot served as the GenAI tool for educational purposes, and the method was
+structured into three distinct phases, each designed to systematically assess
+its interaction with students.
 
-\subsection{CharlieBot}
+\subsection{Iplacex ChatBot}
 
-CharlieBot is an educational chatbot powered by ChatGPT 3.5 and enhanced with
-Retrieval-Augmented Generation (RAG) \citep{Sun24}. RAG is an AI technique that
-integrates information retrieval with generative models. It first retrieves
+Iplacex ChatBot is an educational chatbot powered by ChatGPT 3.5 and enhanced
+with Retrieval-Augmented Generation (RAG) \citep{Sun24}. RAG is an AI technique
+that integrates information retrieval with generative models. It first retrieves
 relevant documents or data from a knowledge base or external source using a
 retrieval model. Then, a generative model uses this retrieved information to
 generate more accurate, context-aware responses. This dual-step process enhances
 the quality and reliability of the chatbot's answers. A prior study on
-CharlieBot's performance revealed that most students found its responses
+Iplacex ChatBot's performance revealed that most students found its responses
 appropriate for the Java programming course \citep{Hoyos24}.
 
 \begin{table*}[htbp]
