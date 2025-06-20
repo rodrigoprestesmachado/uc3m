@@ -102,3 +102,37 @@ messages than men.
 in single-message chats — a statistically significant difference.
 <!-- .element: style="margin-bottom:50px; font-size: 24px; color:black; font-family: Helvetica;" -->
 
+
+<!-- .slide: data-background="#FFFF" data-transition="convex" -->
+## Metacognition
+<!-- .element: style="margin-bottom:80px; font-size: 38px; color:black; font-family: Comic Sans MS;" -->
+
+* Definition of the terms “cognition” and “metacognition” was requested from LLM models.
+<!-- .element: style="margin-bottom:50px; font-size: 28px; color:black; font-family: Helvetica;" -->
+
+* A CSV file with 10,490 student phrases was submitted for processing by LLM models.
+<!-- .element: style="margin-bottom:50px; font-size: 28px; color:black; font-family: Helvetica;" -->
+
+* Claude, DeepSeek and Copilot: not able to process the input file.
+<!-- .element: style="margin-bottom:50px; font-size: 28px; color:black; font-family: Helvetica;" -->
+
+
+<!-- .slide: data-background="#FFFF" data-transition="convex" -->
+## Metacognition
+<!-- .element: style="margin-bottom:80px; font-size: 38px; color:black; font-family: Comic Sans MS;" -->
+
+* Gemini 2.5 Flash: 0 phrases (0%)
+<!-- .element: style="margin-bottom:30px; font-size: 24px; color:black; font-family: Helvetica;" -->
+
+* Gemini 2.5 Pro: 7 phrases (0.07%)
+<!-- .element: style="margin-bottom:30px; font-size: 24px; color:black; font-family: Helvetica;" -->
+
+* Gpt-4o: 56 phrases (0.53%)
+<!-- .element: style="margin-bottom:30px; font-size: 24px; color:black; font-family: Helvetica;" -->
+
+* o3: 122 phrases (1.16%)
+<!-- .element: style="margin-bottom:30px; font-size: 24px; color:black; font-family: Helvetica;" -->
+
+* Manus: 128 phrases (1.22%)
+<!-- .element: style="margin-bottom:30px; font-size: 24px; color:black; font-family: Helvetica;" -->
+
