@@ -77,7 +77,7 @@ and a decrease in the average number of messages per study chat (from 3.38 to 3.
 * 1723 chats have only 1 message held by 1204 students (F: 463 (38.5%), M: 741 (61.5%))
 <!-- .element: style="margin-bottom:50px; font-size: 24px; color:black; font-family: Helvetica;" -->
 
-* p-valor = 0.00215
+* p-value = 0.00215
 <!-- .element: style="margin-bottom:50px; font-size: 24px; color:black; font-family: Helvetica;" -->
 
 * Analysis shows that women are more likely to engage in chats with more than 2
