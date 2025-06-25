@@ -141,7 +141,7 @@ class GitHubMarkdown:
 if __name__ == "__main__":
 
 		url = "https://github.com/rodrigoprestesmachado"
-		project_name = "pw2"
+		project_name = "cpw2"
 		markdown_folder = "docs"
 
 		# Create an instance of the GitHubMarkdown and process the markdown

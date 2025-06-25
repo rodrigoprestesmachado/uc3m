@@ -23,9 +23,9 @@ from orion_text_merger import TextMerger
 from orion_text_chunker import TextChunker
 from orion_rag_chroma_client import OrionChromaDBClient
 
-DOCUMENTATION = '/Users/rodrigo/Downloads/documentation/'
-FILE_NAME = 'merged.txt'
-COLLECTION_NAME = "python_collection"
+DOCUMENTATION = '/Users/rodrigo/dev/uc3m/text_files/'
+FILE_NAME = '/Users/rodrigo/dev/uc3m/Code/rag/content/pw2.txt'
+COLLECTION_NAME = "orion"
 CHUNK_SIZE = 500
 
 def merger_text_files():
@@ -46,6 +46,7 @@ def create_database():
     client.add_chunks_to_db(chunks)
 
 if __name__ == "__main__":
-    # Uncomment the following lines to merge files and create the database
-    # merger_text_files()
+    # Merge text files
+    #merger_text_files()
+    # Create the database with chunks
     create_database()

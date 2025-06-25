@@ -136,3 +136,17 @@ in single-message chats — a statistically significant difference.
 * Manus: 128 phrases (1.22%)
 <!-- .element: style="margin-bottom:30px; font-size: 24px; color:black; font-family: Helvetica;" -->
 
+
+<!-- .slide: data-background="#FFFF" data-transition="convex" -->
+## Examples
+<!-- .element: style="margin-bottom:50px; font-size: 38px; color:black; font-family: Comic Sans MS;" -->
+
+* _Cómo puedo estudiar y aprender mejor distribuyendo el tiempo de estudio puedes indicarme cual es la.organixaciom perfecta_
+<!-- .element: style="margin-bottom:80px; font-size: 24px; color:black; font-family: Comic Sans MS;" -->
+
+* _¿todavia no entiendo de donde salio el 15% de ejercicio y si lo calculas por el 12% me da otro impueso_
+<!-- .element: style="margin-bottom:80px; font-size: 24px; color:black; font-family: Comic Sans MS;" -->
+
+* _Hola, estoy estudiando diagramas de flujo, y hay un componente que no entiendo a qué se refiere: Entrada y Salida (de datos) Este símbolo, denominado “Datos” permite representar la lectura (ingreso de los datos) o impresión (salida de los datos). Me lo podrías explicar por favor y dar algunos ejemplos de como se usa_
+<!-- .element: style="margin-bottom:80px; font-size: 24px; color:black; font-family: Comic Sans MS;" -->
+
